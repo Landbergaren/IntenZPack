@@ -28,6 +28,6 @@ modded class PlayerConstants
 	static const float SL_WATER_NORMAL = 1500;   //below is yellow
 	static const float SL_WATER_HIGH = 4500;    //below is quarter from full, above is full
 
-    static const float LOW_WATER_THRESHOLD =    PlayerConstants.SL_WATER_LOW;	//threshold from which water affects health
+	static const float LOW_WATER_THRESHOLD =    PlayerConstants.SL_WATER_LOW;	//threshold from which water affects health
 	static const float LOW_ENERGY_THRESHOLD =   PlayerConstants.SL_ENERGY_LOW;	//threshold from which energy affects health;	
 };

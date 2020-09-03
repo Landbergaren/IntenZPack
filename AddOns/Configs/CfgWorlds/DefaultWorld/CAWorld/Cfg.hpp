@@ -5,5 +5,6 @@ class CAWorld: DefaultWorld
 		#include "LightingNew\Cfg.hpp"
 		#include "VolFog\Cfg.hpp"
 	};
+	volFogOffset = 1;
 };
 #include "ChernarusPlus\Cfg.hpp"

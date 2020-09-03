@@ -3,7 +3,7 @@ modded class Environment
 	//! Checks if the Umbrella in hand is open 
 	bool IsUmbrellaOpen()
 	{
-		Umbrella_Base umbrella = IsHoldingUmbrella();
+		Umbrella_ColorBase umbrella = IsHoldingUmbrella();
 		
 		if(umbrella && umbrella.IsOpen() )
 		{
@@ -14,16 +14,16 @@ modded class Environment
 	}
 	
 	//! Checks if the Player is holding an Umbrella
-	Umbrella_Base IsHoldingUmbrella()
+	Umbrella_ColorBase IsHoldingUmbrella()
 	{
 		PlayerBase player = GetGame().GetPlayer();
 		
 		if (player)
 		{
-			Umbrella_Base umbrella;
+			Umbrella_ColorBase umbrella;
 			umbrella = player.GetHumanInventory().GetEntityInHands();
 			
-			if(umbrella && umbrella.IsInherited(Umbrella_Base))
+			if(umbrella && umbrella.IsInherited(Umbrella_ColorBase))
 			{
 				return umbrella;
 			}
