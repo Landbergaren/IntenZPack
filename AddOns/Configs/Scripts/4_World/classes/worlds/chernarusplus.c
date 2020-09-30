@@ -272,40 +272,31 @@ modded class ChernarusPlusData extends WorldData
 				
 				m_chance = Math.RandomIntInclusive( 0, 100 );
 
-				if (  fogyMorning > 0.10 )
+				if ( (g_Game.GetDayTime() > 4 && g_Game.GetDayTime() < 8 ) )
 				{
-					if ( (g_Game.GetDayTime() > 4 && g_Game.GetDayTime() < 8 ) )
+					if ( fogyMorning > 0.10 )
 					{
 						fogMin = 0.70;
 						fogMax = 0.90;
-						fogTime = 300;
+						fogTime = 1800;
 					}
-				}
-				if (  fogyMorning > 0.25 )
-				{
-					if ( (g_Game.GetDayTime() > 4 && g_Game.GetDayTime() < 8 ) )
+					if ( fogyMorning > 0.25 )
 					{
 						fogMin = 0.50;
 						fogMax = 0.70;
-						fogTime = 300;
+						fogTime = 1800;
 					}
-				}
-				if (  fogyMorning > 0.45 )
-				{
-					if ( (g_Game.GetDayTime() > 4 && g_Game.GetDayTime() < 8 ) )
+					if ( fogyMorning > 0.45 )
 					{
 						fogMin = 0.30;
 						fogMax = 0.50;
-						fogTime = 300;
+						fogTime = 1800;
 					}
-				}
-				if (  fogyMorning > 0.70 )
-				{
-					if ( (g_Game.GetDayTime() > 4 && g_Game.GetDayTime() < 8 ) )
+					if ( fogyMorning > 0.70 )
 					{
 						fogMin = 0.10;
 						fogMax = 0.30;
-						fogTime = 300;
+						fogTime = 1800;
 					}
 				}
 				if ( m_Weather.GetOvercast().GetActual() < 0.2 )

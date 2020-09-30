@@ -3,7 +3,7 @@ class LightingNew
 	class C_Night
 	{
 		sunAngle = -18;
-		sunOrMoon = 0.0;
+		sunOrMoon = 0;
 		desiredLuminanceCoef = -0.050;
 		filmGrainIntensity = 0.0100;
 		
@@ -22,7 +22,7 @@ class LightingNew
 	class C_Astro1
 	{
 		sunAngle = -17;
-		sunOrMoon = 0.1;
+		sunOrMoon = 0.5;
 		desiredLuminanceCoef = -0.025;
 		filmGrainIntensity = 0.0075;
 		
@@ -41,7 +41,7 @@ class LightingNew
 	class C_Astro2
 	{
 		sunAngle = -16;
-		sunOrMoon = 0.2;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.000;
 		filmGrainIntensity = 0.0075;
 		
@@ -60,7 +60,7 @@ class LightingNew
 	class C_Astro3
 	{
 		sunAngle = -14;
-		sunOrMoon = 0.3;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.025;
 		filmGrainIntensity = 0.0075;
 		
@@ -79,7 +79,7 @@ class LightingNew
 	class C_Nautical1
 	{
 		sunAngle = -12;
-		sunOrMoon = 0.4;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.050;
 		filmGrainIntensity = 0.0050;
 		
@@ -98,7 +98,7 @@ class LightingNew
 	class C_Nautical2
 	{
 		sunAngle = -10;
-		sunOrMoon = 0.5;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.075;
 		filmGrainIntensity = 0.0050;
 		
@@ -117,7 +117,7 @@ class LightingNew
 	class C_Nautical3
 	{
 		sunAngle = -8;
-		sunOrMoon = 0.6;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.100;
 		filmGrainIntensity = 0.0050;
 		
@@ -136,7 +136,7 @@ class LightingNew
 	class C_Civil1
 	{
 		sunAngle = -6;
-		sunOrMoon = 0.7;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.175;
 		filmGrainIntensity = 0.0025;
 		
@@ -155,7 +155,7 @@ class LightingNew
 	class C_Civil2
 	{
 		sunAngle = -4;
-		sunOrMoon = 0.8;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.250;
 		filmGrainIntensity = 0.0025;
 		
@@ -174,7 +174,7 @@ class LightingNew
 	class C_Civil3
 	{
 		sunAngle = -2;
-		sunOrMoon = 0.9;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.325;
 		filmGrainIntensity = 0.0025;
 		
@@ -193,7 +193,7 @@ class LightingNew
 	class C_Day0
 	{
 		sunAngle = 0;
-		sunOrMoon = 1.0;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.40;
 		filmGrainIntensity = 0.0;
 		
@@ -212,7 +212,7 @@ class LightingNew
 	class C_Day4
 	{
 		sunAngle = 4;
-		sunOrMoon = 1.0;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.45;
 		filmGrainIntensity = 0.0;
 		
@@ -231,7 +231,7 @@ class LightingNew
 	class C_Day8
 	{
 		sunAngle = 8;
-		sunOrMoon = 1.0;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.50;
 		filmGrainIntensity = 0.0;
 		
@@ -250,7 +250,7 @@ class LightingNew
 	class C_Day12
 	{
 		sunAngle = 12;
-		sunOrMoon = 1.0;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.53;
 		filmGrainIntensity = 0.0;
 		
@@ -269,7 +269,7 @@ class LightingNew
 	class C_Day35
 	{
 		sunAngle = 35;
-		sunOrMoon = 1.0;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.62;
 		filmGrainIntensity = 0.0;
 		
@@ -288,7 +288,7 @@ class LightingNew
 	class C_Day60
 	{
 		sunAngle = 60;
-		sunOrMoon = 1.0;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.66;
 		filmGrainIntensity = 0.0;
 		
@@ -307,7 +307,7 @@ class LightingNew
 	class O_Night
 	{
 		sunAngle = -18;
-		sunOrMoon = 0.0;
+		sunOrMoon = 0;
 		desiredLuminanceCoef = -0.075;
 		filmGrainIntensity = 0.0100;
 		
@@ -326,7 +326,7 @@ class LightingNew
 	class O_Astro1
 	{
 		sunAngle = -17;
-		sunOrMoon = 0.25;
+		sunOrMoon = 0.5;
 		desiredLuminanceCoef = -0.050;
 		filmGrainIntensity = 0.0075;
 		
@@ -345,7 +345,7 @@ class LightingNew
 	class O_Nautical1
 	{
 		sunAngle = -12;
-		sunOrMoon = 0.5;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.025;
 		filmGrainIntensity = 0.0050;
 		
@@ -364,7 +364,7 @@ class LightingNew
 	class O_Civil1
 	{
 		sunAngle = -6;
-		sunOrMoon = 0.75;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.150;
 		filmGrainIntensity = 0.0025;
 		
@@ -383,7 +383,7 @@ class LightingNew
 	class O_Civil2
 	{
 		sunAngle = -2;
-		sunOrMoon = 0.75;
+		sunOrMoon = 1;
 		desiredLuminanceCoef = 0.225;
 		filmGrainIntensity = 0.0025;
 		

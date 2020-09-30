@@ -1,4 +1,4 @@
-modded class EmoteManager
+/*modded class EmoteManager
 {
 	//! Checks if the Umbrella in hand is open 
 	bool IsUmbrellaOpen()
@@ -470,9 +470,6 @@ modded class EmoteManager
 			            }
 					}
 				break;
-				
-				/*case ID_EMOTE_DEBUG :
-				break;*/
 				
 				default :
 					Print("EmoteManager.c | PlayEmote | WRONG ID");

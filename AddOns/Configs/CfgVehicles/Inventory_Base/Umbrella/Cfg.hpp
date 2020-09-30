@@ -3,7 +3,7 @@ class Umbrella_ColorBase: Inventory_Base
 	model="IntenZ\Assets\umbrella\umbrella.p3d";
 	displayName="$STR_iz_cfgvehicles_Umbrella0";
 	descriptionShort="$STR_iz_cfgvehicles_Umbrella1";
-	suicideAnim="sword";
+//	suicideAnim="sword";
 	lootCategory="Tools";
 	rotationFlags=17;
 	weight=750;

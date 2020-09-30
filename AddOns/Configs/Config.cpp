@@ -10,6 +10,8 @@ class CfgPatches
 		//	"DayZExpansion_Scripts",
 			
 			"DZ_Data",
+			"DZ_Scripts",
+			
 			"DZ_Characters",
 			"DZ_Characters_Tops",
 			"DZ_Characters_Vests",
@@ -39,7 +41,7 @@ class CfgPatches
 
 class CfgMods
 {
-	class IntenZPack
+	class IntenZ_Configs
 	{
 		type = "mod";
 		dependencies[] = {"Game","World","Mission"};

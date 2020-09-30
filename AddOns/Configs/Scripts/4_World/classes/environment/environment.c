@@ -1,4 +1,4 @@
-modded class Environment
+/*modded class Environment
 {	
 	//! Checks if the Umbrella in hand is open 
 	bool IsUmbrellaOpen()

@@ -50,3 +50,8 @@ class KazuarOptic: ItemOptics
 	displayName="$STR_iz_cfgvehicles_1PN51Optic0";
 	descriptionShort="$STR_iz_cfgvehicles_1PN51Optic1";
 };
+class PistolOptic: ItemOptics
+{
+	displayName="$STR_iz_cfgVehicles_pistoloptic0";
+	descriptionShort="$STR_iz_cfgVehicles_pistoloptic1";
+};

@@ -11,7 +11,7 @@ class CfgPatches
 
 class CfgMods
 {
-	class IntenZPack
+	class IntenZ_Assets
 	{
 		type = "mod";
 	};

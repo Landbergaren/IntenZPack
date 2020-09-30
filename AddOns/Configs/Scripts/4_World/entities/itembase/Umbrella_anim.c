@@ -15,14 +15,14 @@ class Umbrella_ColorBase: Inventory_Base
 	{
 		m_Openable.Open();
 		SetSynchDirty();
-
+		
 		UpdateVisualState();
 	}
 	override void Close()
 	{
 		m_Openable.Close();
 		SetSynchDirty();
-
+		
 		UpdateVisualState();
 	}
 //----------------------------------
@@ -45,12 +45,12 @@ class Umbrella_ColorBase: Inventory_Base
 		}
 	}
 //----------------------------------
-    override void OnVariablesSynchronized()
-    {
-        super.OnVariablesSynchronized();
-
-        UpdateVisualState();
-    }
+	override void OnVariablesSynchronized()
+	{
+		super.OnVariablesSynchronized();
+		
+		UpdateVisualState();
+	}
 //----------------------------------
 	override bool CanPutInCargo( EntityAI parent )
 	{
@@ -66,11 +66,7 @@ class Umbrella_ColorBase: Inventory_Base
 	}
 	override bool CanPutAsAttachment( EntityAI parent )
 	{
-		if ( !IsRuined() )
-		{
-			return true;
-		}
-		if ( !IsOpen() )
+		if ( !IsRuined() && !IsOpen() )
 		{
 			return true;
 		}

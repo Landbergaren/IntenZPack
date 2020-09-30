@@ -19,8 +19,8 @@ class CZ75: CZ75_Base
 	descriptionShort="$STR_iz_cfgWeapons_CZ751";
 };
 
-class DE_Base: Pistol_Base {};
-class DE: DE_Base
+class Deagle_Base: Pistol_Base {};
+class Deagle: Deagle_Base
 {
 	displayName="$STR_iz_cfgWeapons_DE0";
 	descriptionShort="$STR_iz_cfgWeapons_DE1";
