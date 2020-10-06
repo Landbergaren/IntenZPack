@@ -1,0 +1,20 @@
+ImageSetClass {
+ Name "IntenZ_gui"
+ RefSize 2048 2048
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{56DC06B9B62CE936}IntenZ/Assets/imagesets/IntenZ_gui.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass IntenZ_Logo {
+   Name "IntenZ_Logo"
+   Pos 253 930
+   Size 1543 723
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}
