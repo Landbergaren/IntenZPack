@@ -7,8 +7,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = 
 		{
-		//	"DayZExpansion_Scripts",
-			
 			"DZ_Data",
 			"DZ_Scripts",
 			

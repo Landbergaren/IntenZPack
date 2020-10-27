@@ -1,10 +1,10 @@
-class Umbrella_ColorBase: Inventory_Base
+class ItemUmbrella: Inventory_Base {};
+class Umbrella_ColorBase: ItemUmbrella
 {
 	model="IntenZ\Umbrella\Assets\umbrella.p3d";
 	displayName="$STR_iz_cfgvehicles_Umbrella0";
 	descriptionShort="$STR_iz_cfgvehicles_Umbrella1";
 //	suicideAnim="sword";
-	lootCategory="Tools";
 	rotationFlags=17;
 	weight=750;
 	isMeleeWeapon=1;
@@ -12,13 +12,6 @@ class Umbrella_ColorBase: Inventory_Base
 	repairableWithKits[]={5,4};
 	repairCosts[]={30,25};
 	itemSize[]={2,7};
-	itemInfo[]={"Axe"};
-	lootTag[]=
-	{
-		"Work",
-		"Forester",
-		"Camping"
-	};
 	inventorySlot[]=
 	{
 		"Shoulder",

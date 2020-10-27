@@ -1,30 +1,39 @@
 modded class MissionMainMenu extends MissionBase
 {
-	
 	override void OnKeyRelease(int key)
 	{
-		
 		super.OnKeyRelease(key);
 		
 		if ( key == KeyCode.KC_NUMPADENTER )
 		{
-			
 			Print("[INTENZ] Numpad enter pressed, changing menu music.");
 
 			PlayNextMusic(m_MenuMusic);
-			
 		}
-		
+	}
+	
+	override void OnMissionFinish()
+	{
+	 	if (m_MenuMusic != null)
+		{
+			// Remove listeners
+			Managed data = m_MenuMusic.GetUserData();
+			AbstractWaveEvents events;
+			Class.CastTo(events, data);
+			events.Event_OnSoundWaveEnded.Clear();
+
+			m_MenuMusic.Stop();	
+			m_MenuMusic = null;
+		}
+		super.OnMissionFinish();
 	}
 	
 	override void PlayMusic()
 	{
-		
 		Print("[INTENZ] Play Music (override)");
 		
 		if ( !m_MenuMusic )
 		{
-			
 			Print("[INTENZ] Creating menu music object...");
 
 			ref SoundParams soundParams			= new SoundParams( "IntenzMenuMusic_SoundSet");
@@ -49,19 +58,15 @@ modded class MissionMainMenu extends MissionBase
 			Print("[INTENZ] ...Playing menu music object: " + m_MenuMusic.ToString());
 			
 			m_MenuMusic.Play();
-			
 		}
-		
 	}
 	
 	void PlayNextMusic(AbstractWave menuMusicObject) 
 	{
-
 		Print("[INTENZ] Music ended: " + menuMusicObject.ToString());
 
 		if (m_MenuMusic != null)
 		{
-			
 			// Remove listeners
 			Managed data = m_MenuMusic.GetUserData();
 			AbstractWaveEvents events;
@@ -70,12 +75,8 @@ modded class MissionMainMenu extends MissionBase
 
 			m_MenuMusic.Stop();	
 			m_MenuMusic = null;
-			
 		}
-		
 		// I hope that GC is a thing in this engine..
 		PlayMusic();
-
 	}
-	
-};
+}

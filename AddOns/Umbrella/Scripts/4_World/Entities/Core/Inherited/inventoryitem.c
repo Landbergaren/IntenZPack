@@ -1,0 +1,1 @@
+class ItemUmbrella extends InventoryItemSuper {};

@@ -6,7 +6,6 @@ modded class MainMenu
 		Widget widgets = super.Init();
 		Print("CUSTOM MAIN MENU INIT");
 		m_ModdedWarning.SetText("");
-//		m_Newsfeed.HideNewsfeed();
 		m_LogoImage = ImageWidget.Cast( widgets.FindAnyWidget( "dayz_logo" ) );
 		
 		Print("SETTING LOGO IMAGE 1");

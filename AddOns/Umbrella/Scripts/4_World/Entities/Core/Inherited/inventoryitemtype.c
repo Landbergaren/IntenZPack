@@ -1,0 +1,1 @@
+class ItemUmbrellaType extends InventoryItemType {};
