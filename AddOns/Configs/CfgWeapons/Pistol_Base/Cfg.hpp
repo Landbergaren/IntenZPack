@@ -3,7 +3,7 @@ class Pistol_Base;
 class Colt1911_Base: Pistol_Base {};
 class Colt1911: Colt1911_Base
 {
-	displayName="$STR_iz_cfgweapons_engraved19110";
+	displayName="$STR_iz_cfgWeapons_Colt19110";
 	descriptionShort="$STR_iz_cfgWeapons_Colt19111";
 };
 class Engraved1911: Colt1911_Base
@@ -28,11 +28,6 @@ class Deagle: Deagle_Base
 
 class FNX45_Base: Pistol_Base {};
 class FNX45: FNX45_Base
-{
-	displayName="$STR_iz_cfgweapons_fnx450";
-	descriptionShort="$STR_iz_cfgWeapons_FNX451";
-};
-class FNX45_arrow: FNX45
 {
 	displayName="$STR_iz_cfgweapons_fnx450";
 	descriptionShort="$STR_iz_cfgWeapons_FNX451";
@@ -69,14 +64,14 @@ class MKII: MKII_Base
 class P1_Base: Pistol_Base {};
 class P1: P1_Base
 {
-	displayName="Walther P1";
+	displayName="$STR_iz_cfgWeapons_P10";
 	descriptionShort="$STR_iz_cfgWeapons_P11";
 };
 	
 class MakarovPB_Base: Pistol_Base {};
 class MakarovPB: MakarovPB_Base
 {
-	displayName="Makarov PB-6P9";
+	displayName="$STR_iz_cfgWeapons_MakarovPB0";
 	descriptionShort="$STR_iz_cfgWeapons_MakarovPB1";
 };
 	
@@ -91,5 +86,5 @@ class Red9_Base: Pistol_Base {};
 class Red9: Red9_Base
 {
 	displayName="$STR_iz_cfgweapons_red90";
-	descriptionShort="$STR_cfgWeapons_Red91";
+	descriptionShort="$STR_iz_cfgWeapons_Red91";
 };

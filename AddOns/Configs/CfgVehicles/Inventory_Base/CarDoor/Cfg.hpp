@@ -113,55 +113,15 @@ class Sedan_02_Trunk: CarDoor
 class Truck_01_Door_1_1: CarDoor
 {
 	displayName="$STR_iz_V3SDoors_Driver0";
+	descriptionShort="$STR_iz_V3SDoors_Driver1";
 };
 class Truck_01_Door_2_1: Truck_01_Door_1_1
 {
 	displayName="$STR_iz_V3SDoors_CoDriver0";
+	descriptionShort="$STR_iz_V3SDoors_CoDriver1";
 };
 class Truck_01_Hood: CarDoor
 {
 	displayName="$STR_iz_V3SHood0";
-};
-class Truck_02_Door_1_1: CarDoor
-{
-	displayName="Left Door";
-	descriptionShort="Door";
-};
-class Truck_02_Door_2_1: Truck_02_Door_1_1
-{
-	displayName="Right Door";
-	descriptionShort="Door";
-};
-class Van_01_Door_1_1: CarDoor
-{
-	displayName="$STR_iz_CivVanDoors_Driver0";
-	descriptionShort="$STR_iz_CivVanDoors_Driver1";
-};
-class Van_01_Door_2_1: Van_01_Door_1_1
-{
-	displayName="$STR_iz_CivVanDoors_CoDriver0";
-};
-class Van_01_Door_2_2: Van_01_Door_1_1
-{
-	displayName="$STR_iz_CivVanDoors_BackRight0";
-};
-class Van_01_Trunk_1: Van_01_Door_1_1
-{
-	displayName="$STR_iz_CivVanDoors_TrunkUp0";
-};
-class Van_01_Trunk_2: Van_01_Door_1_1
-{
-	displayName="$STR_iz_CivVanDoors_TrunkDown0";
-};
-class BusDoors_Left: Inventory_Base
-{
-	displayName="$STR_iz_BusDoors_Left0";
-};
-class BusDoors_Right: BusDoors_Left
-{
-	displayName="$STR_iz_BusDoors_Right0";
-};
-class BusHood: Inventory_Base
-{
-	displayName="$STR_iz_BusHood0";
+	descriptionShort="$STR_iz_V3SHood1";
 };

@@ -2,30 +2,33 @@ modded class LoadingScreen
 {
 	ref TStringArray loadingscreens = 
 	{
-		"IntenZ/Loadingscreens/Assets/01.paa",
-		"IntenZ/Loadingscreens/Assets/02.paa",
-		"IntenZ/Loadingscreens/Assets/03.paa",
-		"IntenZ/Loadingscreens/Assets/04.paa",
-		"IntenZ/Loadingscreens/Assets/05.paa",
-	//	"IntenZ/Loadingscreens/Assets/06.paa",
-		"IntenZ/Loadingscreens/Assets/07.paa",
-		"IntenZ/Loadingscreens/Assets/08.paa",
-	//	"IntenZ/Loadingscreens/Assets/09.paa",
-	//	"IntenZ/Loadingscreens/Assets/10.paa",
-		"IntenZ/Loadingscreens/Assets/11.paa",
-		"IntenZ/Loadingscreens/Assets/12.paa",
-		"IntenZ/Loadingscreens/Assets/13.paa",
-		"IntenZ/Loadingscreens/Assets/14.paa",
-		"IntenZ/Loadingscreens/Assets/15.paa"
+		"IntenZ/Loadingscreens/Assets/01.edds",
+		"IntenZ/Loadingscreens/Assets/02.edds",
+		"IntenZ/Loadingscreens/Assets/03.edds",
+		"IntenZ/Loadingscreens/Assets/04.edds",
+		"IntenZ/Loadingscreens/Assets/05.edds",
+		"IntenZ/Loadingscreens/Assets/06.edds",
+		"IntenZ/Loadingscreens/Assets/07.edds",
+		"IntenZ/Loadingscreens/Assets/08.edds",
+		"IntenZ/Loadingscreens/Assets/09.edds",
+		"IntenZ/Loadingscreens/Assets/10.edds",
+		"IntenZ/Loadingscreens/Assets/11.edds",
+		"IntenZ/Loadingscreens/Assets/12.edds"
 	};
 	
 	void LoadingScreen(DayZGame game) 
 	{
 		Class.CastTo(m_ImageLogoMid, m_WidgetRoot.FindAnyWidget("ImageLogoMid"));
 		Class.CastTo(m_ImageLogoCorner, m_WidgetRoot.FindAnyWidget("ImageLogoCorner"));
+		Class.CastTo(m_ImageWidgetBackground, m_WidgetRoot.FindAnyWidget("ImageBackground"));
+		
+		m_ImageLogoMid.LoadImageFile( 0, "set:IntenZ_gui image:IntenZ_Logo" );
+		m_ImageLogoCorner.LoadImageFile( 0, "set:IntenZ_gui image:IntenZ_Logo" );
+		
 		m_ImageLogoMid.Show(false);
-		m_ImageLogoCorner.Show(false);
+		m_ImageLogoCorner.Show(true);
 		m_ModdedWarning.Show(false);
+		
 		m_ImageBackground.LoadMaskTexture("");
 		ProgressAsync.SetUserData(m_ImageBackground);
 	}
@@ -33,7 +36,6 @@ modded class LoadingScreen
 	override void Show() 
 	{
 		string lsElement = loadingscreens.GetRandomElement();
-	//	m_ImageWidgetBackground.LoadMaskTexture("IntenZ/Assets/loadingscreens/01.paa");
 		m_ImageWidgetBackground.LoadImageFile(0, lsElement);
 		
 		Widget lIcon = m_ImageBackground;
@@ -71,21 +73,18 @@ modded class LoginQueueBase
 {
 	ref TStringArray loadingscreens = 
 	{
-		"IntenZ/Loadingscreens/Assets/01.paa",
-		"IntenZ/Loadingscreens/Assets/02.paa",
-		"IntenZ/Loadingscreens/Assets/03.paa",
-		"IntenZ/Loadingscreens/Assets/04.paa",
-		"IntenZ/Loadingscreens/Assets/05.paa",
-	//	"IntenZ/Loadingscreens/Assets/06.paa",
-		"IntenZ/Loadingscreens/Assets/07.paa",
-		"IntenZ/Loadingscreens/Assets/08.paa",
-	//	"IntenZ/Loadingscreens/Assets/09.paa",
-	//	"IntenZ/Loadingscreens/Assets/10.paa",
-		"IntenZ/Loadingscreens/Assets/11.paa",
-		"IntenZ/Loadingscreens/Assets/12.paa",
-		"IntenZ/Loadingscreens/Assets/13.paa",
-		"IntenZ/Loadingscreens/Assets/14.paa",
-		"IntenZ/Loadingscreens/Assets/15.paa"
+		"IntenZ/Loadingscreens/Assets/01.edds",
+		"IntenZ/Loadingscreens/Assets/02.edds",
+		"IntenZ/Loadingscreens/Assets/03.edds",
+		"IntenZ/Loadingscreens/Assets/04.edds",
+		"IntenZ/Loadingscreens/Assets/05.edds",
+		"IntenZ/Loadingscreens/Assets/06.edds",
+		"IntenZ/Loadingscreens/Assets/07.edds",
+		"IntenZ/Loadingscreens/Assets/08.edds",
+		"IntenZ/Loadingscreens/Assets/09.edds",
+		"IntenZ/Loadingscreens/Assets/10.edds",
+		"IntenZ/Loadingscreens/Assets/11.edds",
+		"IntenZ/Loadingscreens/Assets/12.edds"
 	};
 	
 	override Widget Init() 
@@ -103,21 +102,18 @@ modded class LoginTimeBase
 {
 	ref TStringArray loadingscreens = 
 	{
-		"IntenZ/Loadingscreens/Assets/01.paa",
-		"IntenZ/Loadingscreens/Assets/02.paa",
-		"IntenZ/Loadingscreens/Assets/03.paa",
-		"IntenZ/Loadingscreens/Assets/04.paa",
-		"IntenZ/Loadingscreens/Assets/05.paa",
-	//	"IntenZ/Loadingscreens/Assets/06.paa",
-		"IntenZ/Loadingscreens/Assets/07.paa",
-		"IntenZ/Loadingscreens/Assets/08.paa",
-	//	"IntenZ/Loadingscreens/Assets/09.paa",
-	//	"IntenZ/Loadingscreens/Assets/10.paa",
-		"IntenZ/Loadingscreens/Assets/11.paa",
-		"IntenZ/Loadingscreens/Assets/12.paa",
-		"IntenZ/Loadingscreens/Assets/13.paa",
-		"IntenZ/Loadingscreens/Assets/14.paa",
-		"IntenZ/Loadingscreens/Assets/15.paa"
+		"IntenZ/Loadingscreens/Assets/01.edds",
+		"IntenZ/Loadingscreens/Assets/02.edds",
+		"IntenZ/Loadingscreens/Assets/03.edds",
+		"IntenZ/Loadingscreens/Assets/04.edds",
+		"IntenZ/Loadingscreens/Assets/05.edds",
+		"IntenZ/Loadingscreens/Assets/06.edds",
+		"IntenZ/Loadingscreens/Assets/07.edds",
+		"IntenZ/Loadingscreens/Assets/08.edds",
+		"IntenZ/Loadingscreens/Assets/09.edds",
+		"IntenZ/Loadingscreens/Assets/10.edds",
+		"IntenZ/Loadingscreens/Assets/11.edds",
+		"IntenZ/Loadingscreens/Assets/12.edds"
 	};
 	
 	override Widget Init() 
