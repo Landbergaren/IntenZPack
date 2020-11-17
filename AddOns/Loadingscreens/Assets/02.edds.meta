@@ -1,18 +1,18 @@
-MetaFileClass {
- Name "{6051A2BD47402247}IntenZ/Loadingscreens/Assets/Imagesets/02.edds"
- Author "desktop-5v1ml8a"
- ChangeDate 1550625118
- Configurations {
-  TGAResourceClass PC {
-   SourceFile "02.tga"
-   FormatCompress Copy
-   TiledTexture 0
-  }
-  TGAResourceClass XBOX_ONE : PC {
-  }
-  TGAResourceClass PS4 : PC {
-  }
-  TGAResourceClass LINUX : PC {
-  }
- }
+MetaFileClass 
+{
+	Name "{6051A2BD47402247}IntenZ/Loadingscreens/Assets/02.edds"
+	Author "desktop-5v1ml8a"
+	ChangeDate 1416931678
+	Configurations 
+	{
+		TGAResourceClass PC 
+		{
+			SourceFile "02.tga"
+			FormatCompress Copy
+			TiledTexture 0
+		}
+		TGAResourceClass XBOX_ONE : PC {}
+		TGAResourceClass PS4 : PC {}
+		TGAResourceClass LINUX : PC {}
+	}
 }

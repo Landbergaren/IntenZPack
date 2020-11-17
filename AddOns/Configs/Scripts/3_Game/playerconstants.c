@@ -12,4 +12,4 @@ modded class PlayerConstants
 
 	static const float LOW_WATER_THRESHOLD = 500;
 	static const float LOW_ENERGY_THRESHOLD = 500;
-};
+}

@@ -1,4 +1,4 @@
-modded class PlayerStatsPCO_v106 
+modded class PlayerStatsPCO_current extends PlayerStatsPCO_v106
 {
     override void Init() 
     {
@@ -13,4 +13,4 @@ modded class PlayerStatsPCO_v106
 		RegisterStat(EPlayerStats_v106.BLOODTYPE,	new PlayerStat<int>		(0,128,BloodTypes.GenerateBloodType(),"BloodType",EPSstatsFlags.EMPTY) );
 		RegisterStat(EPlayerStats_v106.TOXICITY,	new PlayerStat<float>	(0,100,0,"Toxicity",EPSstatsFlags.EMPTY) );
 	}
-};
+}

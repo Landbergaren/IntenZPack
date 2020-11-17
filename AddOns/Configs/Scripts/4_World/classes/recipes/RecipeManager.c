@@ -30,17 +30,5 @@ modded class PluginRecipesManager
 		RegisterRecipe(new CraftTshirtRedArmband);
 		RegisterRecipe(new CraftTshirtRedStripedArmband);
 		RegisterRecipe(new CraftTshirtWhiteArmband);
-		RegisterRecipe(new CraftModdedLeatherGloves);
-		RegisterRecipe(new CraftModdedLeatherHat);
-		RegisterRecipe(new CraftModdedLeatherPants);
-		RegisterRecipe(new CraftModdedLeatherSack);
-		RegisterRecipe(new CraftModdedLeatherSheathe);
-		RegisterRecipe(new CraftModdedLeatherShirt);
-		RegisterRecipe(new CraftModdedLeatherShoes);
-		RegisterRecipe(new CraftModdedLeatherVest);
-		RegisterRecipe(new CraftModdedLeatherWaterPouch);
-		RegisterRecipe(new CraftModdedDriedLeather);
-		RegisterRecipe(new CraftModdedSoftLeather);
-		RegisterRecipe(new CraftModdedTannedLeather);
 	}	
 };

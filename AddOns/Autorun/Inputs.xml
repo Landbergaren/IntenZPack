@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="UASimpleAutorunToggleSprint" loc="STR_iz_AutoSprint" />
+            <input name="UASimpleAutorunToggleRun" loc="STR_iz_AutoRun" />
+            <input name="UASimpleAutorunToggleSmart" loc="STR_iz_AutoMovement" />
+        </actions>
+    </inputs>
+    <preset>
+        <input name="UASimpleAutorunToggleSmart">
+            <btn name="kAdd" />
+        </input>
+    </preset>
+</modded_inputs>
