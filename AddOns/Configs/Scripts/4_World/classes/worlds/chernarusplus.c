@@ -32,13 +32,17 @@ modded class ChernarusPlusData extends WorldData
 	{
 		super.Init();
 
-		m_DayTemperature = 7;
-		m_NightTemperature = -2;
+		// new temperature curve settings
+		m_Sunrise_Jan = 8.54;
+		m_Sunset_Jan = 15.52;
+		m_Sunrise_Jul = 3.26;
+		m_Sunset_Jul = 20.73;
+		m_MaxTemps = {3,5,7,14,19,24,26,25,21,16,10,5};
+		m_MinTemps = {-3,-2,0,4,9,14,18,17,12,7,4,0};
 	}
 	
 	override bool WeatherOnBeforeChange( EWeatherPhenomenon type, float actual, float change, float time )
 	{
-
 		float phmnValue 0;
 		int phmnTime 5;
 		int phmnLength 10;
@@ -174,13 +178,13 @@ modded class ChernarusPlusData extends WorldData
 				//make a differnce in "weak rain"
 				if ( actualOvercast < 0.70 )
 				{
-					if ( m_chance < 20 ) //30% "strong" rain
+					if ( m_chance < 20 ) //20% "strong" rain
 					{
 						phmnValue = Math.RandomFloatInclusive( 0.2, 0.3 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 0;
 					}
-					else if ( m_chance < 40 ) //30% "medium" rain
+					else if ( m_chance < 40 ) //20% "medium" rain
 					{
 						phmnValue = Math.RandomFloatInclusive( 0.1, 0.2 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );

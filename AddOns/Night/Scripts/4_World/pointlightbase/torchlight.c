@@ -17,9 +17,9 @@ modded class TorchLight extends PointLightBase
 		SetFlickerSpeed(0.75);
 		SetDancingShadowsMovementSpeed(0.1);
 		SetDancingShadowsAmplitude(0.03);
-	//	EnableHeatHaze(true);
-	//	SetHeatHazeRadius(0.08);
-	//	SetHeatHazePower(0.015);
+		EnableHeatHaze(true);
+		SetHeatHazeRadius(0.08);
+		SetHeatHazePower(0.015);
 	}
 	
 	override void OnFrameLightSource(IEntity other, float timeSlice)

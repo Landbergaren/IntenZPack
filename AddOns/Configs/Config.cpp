@@ -42,7 +42,7 @@ class CfgMods
 	class IntenZ_Configs
 	{
 		type = "mod";
-		dependencies[] = {"Game","World","Mission"};
+		dependencies[] = {"Game","World"};
 		
 		class defs
 		{	
@@ -55,11 +55,6 @@ class CfgMods
 			{
 				value = "";
 				files[] = {"IntenZ\Configs\Scripts\4_World"};
-			};
-			class missionScriptModule
-			{
-				value = "";
-				files[] = {"IntenZ\Configs\Scripts\5_mission"};
 			};
 		};
 	};

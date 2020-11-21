@@ -1,0 +1,18 @@
+MetaFileClass
+{
+	Name "{625500EE0479871C}IntenZ/Menu/Assets/imagesets/IntenZ_gui.edds"
+	Author "desktop-5v1ml8a"
+	ChangeDate 1376069958
+	Configurations
+	{
+		TGAResourceClass PC
+		{
+			SourceFile "Logo.tga"
+			FormatCompress Copy
+			TiledTexture 0
+		}
+	TGAResourceClass XBOX_ONE : PC {}
+	TGAResourceClass PS4 : PC {}
+	TGAResourceClass LINUX : PC {}
+	}
+}

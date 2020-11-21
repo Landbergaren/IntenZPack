@@ -1,6 +1,6 @@
-/*modded class ChemlightLight extends PointLightBase
+modded class ChemlightLight extends PointLightBase
 {
-	private static float m_DefaultRadius = 10;		// 7.5
+	private static float m_DefaultRadius = 5;		// 7.5
 	private static float m_DefaultBrightness = 1.5;	// 1.5
 	
 	void ChemlightLight()
