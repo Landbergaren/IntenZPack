@@ -1,0 +1,137 @@
+class PlateCarrierHolster: Clothing {};
+
+class PlateCarrierHolster_IntenZ: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\intenz_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\intenz_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\intenz_co.paa"
+	};
+};
+class PlateCarrierHolster_White: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\white_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\white_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\white_co.paa"
+	};
+};
+class PlateCarrierHolster_Black: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\black_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\black_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\black_co.paa"
+	};
+};
+class PlateCarrierHolster_Grey: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\grey_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\grey_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\grey_co.paa"
+	};
+};
+class PlateCarrierHolster_Blue: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\blue_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\blue_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\blue_co.paa"
+	};
+};
+class PlateCarrierHolster_LightGreen: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\light_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\light_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\light_green_co.paa"
+	};
+};
+class PlateCarrierHolster_Green: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\green_co.paa"
+	};
+};
+class PlateCarrierHolster_Dark_Green: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\dark_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\dark_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\dark_green_co.paa"
+	};
+};
+class PlateCarrierHolster_Brown: PlateCarrierHolster
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{		
+		"IntenZ\Clothing\Assets\platecarrier\brown_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\brown_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\brown_co.paa"
+	};
+};

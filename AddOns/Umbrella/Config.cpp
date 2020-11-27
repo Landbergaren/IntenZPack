@@ -2,7 +2,17 @@ class CfgPatches
 {
 	class IntenZ_Umbrella
 	{
-		units[] = {};
+		units[] = 
+		{
+			"Umbrella_Closed",
+			"Umbrella_Opened",
+			
+			"Umbrella_Black",
+			"Umbrella_Blue",
+			"Umbrella_Green",
+			"Umbrella_Rainbow",
+			"Umbrella_Yellow"
+		};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = 

@@ -1,5 +1,9 @@
 class ItemOptics: Inventory_Base {};
 
+class Binoculars: ItemOptics
+{
+	itemSize[]={2,2};
+};
 class M68Optic: ItemOptics
 {
 	displayName="$STR_iz_cfgVehicles_M68Optic0";

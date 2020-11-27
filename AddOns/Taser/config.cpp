@@ -3,7 +3,20 @@ class CfgPatches
 	class IntenZ_Taser
 	{
 		units[] = {};
-		weapons[] = {"Taser_Yellow","Taser_Black"};
+		weapons[] = 
+		{
+			"Taser_Yellow",
+			"Taser_Black"
+		};
+		magazines[] = 
+		{
+			"Mag_taser",
+			"Ammo_taser"
+		};
+		ammo[] = 
+		{
+			"Bullet_Taser"
+		};
 		requiredVersion = 0.1;
 		requiredAddons[] = 
 		{
@@ -13,17 +26,6 @@ class CfgPatches
 			"DZ_Nonlethal_Shockpistol",
 			"DZ_Weapons_Magazines",
 			"DZ_Weapons_Ammunition"
-		};
-		magazines[] = 
-		{
-			"Mag_taser",
-			"Ammo_taser"
-		};
-		ammo[] = 
-		{
-			"Bullet_Taser",
-			"Bullet_Taser",
-			"Bullet_Taser"
 		};
 	};
 };

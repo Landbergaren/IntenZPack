@@ -19,7 +19,12 @@ class Mag_taser: Mag_FNX45_15Rnd
 			{
 				hitpoints = 100;
 				healthLabels[] = {1,0.7,0.5,0.3,0};
-				healthLevels[] = {{1,{"DZ\weapons\pistols\fnx45\data\herstal45.rvmat"}},{0.5,{"DZ\weapons\pistols\fnx45\data\herstal45_damage.rvmat"}},{0,{"DZ\weapons\pistols\fnx45\data\herstal45_destruct.rvmat"}}};
+				healthLevels[] = 
+				{
+					{1,{"DZ\weapons\pistols\fnx45\data\herstal45.rvmat"}},
+					{0.5,{"DZ\weapons\pistols\fnx45\data\herstal45_damage.rvmat"}},
+					{0,{"DZ\weapons\pistols\fnx45\data\herstal45_destruct.rvmat"}}
+				};
 			};
 		};
 	};

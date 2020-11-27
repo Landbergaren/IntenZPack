@@ -85,7 +85,7 @@ class Groza: Groza_Base
 class PM73Rak_Base: Rifle_Base {};
 class PM73Rak: PM73Rak_Base
 {
-	displayName="PM-63 RAK";
+	displayName="$STR_iz_CfgWeapons_PM73Rak0";
 	descriptionShort="$STR_iz_CfgWeapons_PM73Rak1";
 };
 class Repeater_Base: Rifle_Base {};
@@ -115,7 +115,7 @@ class SVD: SVD_Base
 class Trumpet_Base: Rifle_Base {};
 class Trumpet: Trumpet_Base
 {
-	displayName="FN Trombone";
+	displayName="$STR_iz_cfgWeapons_Trumpet0";
 	descriptionShort="$STR_iz_cfgWeapons_Trumpet1";
 };
 class UMP45_Base: Rifle_Base {};

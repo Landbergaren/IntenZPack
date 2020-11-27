@@ -1,0 +1,18 @@
+MetaFileClass 
+{
+	Name "{A6BBD73FB4B779B4}IntenZ/Loadingscreens/Assets/08.edds"
+	Author "desktop-5v1ml8a"
+	ChangeDate 1416931678
+	Configurations 
+	{
+		TGAResourceClass PC 
+		{
+			SourceFile "08.tga"
+			FormatCompress Copy
+			TiledTexture 0
+		}
+		TGAResourceClass XBOX_ONE : PC {}
+		TGAResourceClass PS4 : PC {}
+		TGAResourceClass LINUX : PC {}
+	}
+}

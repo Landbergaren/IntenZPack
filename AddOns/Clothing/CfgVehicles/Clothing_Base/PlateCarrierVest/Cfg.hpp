@@ -1,0 +1,137 @@
+class PlateCarrierVest: Clothing {};
+
+class PlateCarrierVest_IntenZ: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\intenz_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\intenz_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\intenz_co.paa"
+	};
+};
+class PlateCarrierVest_White: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\white_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\white_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\white_co.paa"
+	};
+};
+class PlateCarrierVest_Black: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\black_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\black_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\black_co.paa"
+	};
+};
+class PlateCarrierVest_Grey: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\grey_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\grey_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\grey_co.paa"
+	};
+};
+class PlateCarrierVest_Blue: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\blue_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\blue_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\blue_co.paa"
+	};
+};
+class PlateCarrierVest_LightGreen: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\light_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\light_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\light_green_co.paa"
+	};
+};
+class PlateCarrierVest_Green: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\green_co.paa"
+	};
+};
+class PlateCarrierVest_Dark_Green: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\dark_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\dark_green_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\dark_green_co.paa"
+	};
+};
+class PlateCarrierVest_Brown: PlateCarrierVest
+{
+	hiddenSelections[]=
+	{
+		"camoGround",
+		"camoMale",
+		"camoFemale"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\platecarrier\brown_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\brown_co.paa",
+		"IntenZ\Clothing\Assets\platecarrier\brown_co.paa"
+	};
+};
