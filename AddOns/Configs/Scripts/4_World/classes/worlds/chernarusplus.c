@@ -1,7 +1,7 @@
 modded class ChernarusPlusData extends WorldData
 {
 	//----- weather vars
-	const float RAIN_THRESHOLD = 0.6;
+	const float RAIN_THRESHOLD = 0.7;
 	const float STORM_THRESHOLD = 0.9;
 
 	const int OVERCAST_MIN_TIME = 600;
@@ -37,8 +37,8 @@ modded class ChernarusPlusData extends WorldData
 		m_Sunset_Jan = 15.52;
 		m_Sunrise_Jul = 3.26;
 		m_Sunset_Jul = 20.73;
-		m_MaxTemps = {3,5,7,14,19,24,26,25,21,16,10,5};
-		m_MinTemps = {-3,-2,0,4,9,14,18,17,12,7,4,0};
+		m_MaxTemps = { 3, 5, 3,14,26,24,26,25,21,16,10, 5};
+		m_MinTemps = {-3,-2,-3, 4,18,14,18,17,12, 7, 4, 0};
 	}
 	
 	override bool WeatherOnBeforeChange( EWeatherPhenomenon type, float actual, float change, float time )
@@ -175,84 +175,55 @@ modded class ChernarusPlusData extends WorldData
 					return true;
 				}
 
-				//make a differnce in "weak rain"
-				if ( actualOvercast < 0.70 )
+				//make a differnce in "normal rain"
+				if ( actualOvercast < 0.75 )
 				{
-					if ( m_chance < 20 ) //20% "strong" rain
+					if ( m_chance < 30 )
 					{
-						phmnValue = Math.RandomFloatInclusive( 0.2, 0.3 );
+						phmnValue = Math.RandomFloatInclusive( 0.1, 0.3 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 0;
 					}
-					else if ( m_chance < 40 ) //20% "medium" rain
+					else if ( m_chance < 60 )
 					{
-						phmnValue = Math.RandomFloatInclusive( 0.1, 0.2 );
+						phmnValue = Math.RandomFloatInclusive( 0.2, 0.5 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 0;
 					}
-					else if ( m_chance < 60 ) //20% "weak" rain
+					else if ( m_chance < 80 )
 					{
-						phmnValue = Math.RandomFloatInclusive( 0.0, 0.1 );
+						phmnValue = Math.RandomFloatInclusive( 0.0, 0.2 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 0;
 					}
-					else //40% no rain
+					else //also have the chance to not have rain at all
 					{
 						phmnValue = 0;
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 120;
 					}
 				}
-				//make a differnce in "medium rain"
-				if ( actualOvercast < 0.80 )
-				{
-					if ( m_chance < 20 ) //20% "strong" rain
-					{
-						phmnValue = Math.RandomFloatInclusive( 0.4, 0.5 );
-						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
-						phmnLength = 0;
-					}
-					else if ( m_chance < 45 ) //25% "medium" rain
-					{
-						phmnValue = Math.RandomFloatInclusive( 0.3, 0.4 );
-						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
-						phmnLength = 0;
-					}
-					else if ( m_chance < 70 ) //25% "weak" rain
-					{
-						phmnValue = Math.RandomFloatInclusive( 0.2, 0.3 );
-						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
-						phmnLength = 0;
-					}
-					else //30% no rain
-					{
-						phmnValue = 0;
-						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
-						phmnLength = 120;
-					}
-				}
-				//make a differnce in "heavy rain"
 				else
 				{
-					if ( m_chance < 20 ) //20% "strong" rain
+					if ( m_chance < 25 )
 					{
-						phmnValue = Math.RandomFloatInclusive( 0.6, 0.7 );
+						phmnValue = Math.RandomFloatInclusive( 0.5, 0.7 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 0;
 					}
-					else if ( m_chance < 50 ) //30% "medium" rain
+					else if ( m_chance < 50 )
 					{
-						phmnValue = Math.RandomFloatInclusive( 0.5, 0.6 );
+						phmnValue = Math.RandomFloatInclusive( 0.2, 0.4 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 0;
 					}
-					else if ( m_chance < 80 ) //30% "weak" rain
+					else if ( m_chance < 75 )
 					{
-						phmnValue = Math.RandomFloatInclusive( 0.4, 0.5 );
+						phmnValue = Math.RandomFloatInclusive( 0.4, 0.6 );
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );
 						phmnLength = 0;
 					}
-					else //20% no rain
+					else //also have the chance to not have rain at all
 					{
 						phmnValue = 0;
 						phmnTime = Math.RandomInt( RAIN_TIME_MIN, RAIN_TIME_MAX );

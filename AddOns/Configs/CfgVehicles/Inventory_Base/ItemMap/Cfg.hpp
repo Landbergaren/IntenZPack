@@ -22,9 +22,9 @@ class IntenZMap_Survivor: ChernarusMap
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Assets\textures\map\map_chernarus_co.paa",
-		"IntenZ\Assets\textures\map\survivor_co.paa",
-		"IntenZ\Assets\textures\map\survivor_side_co.paa"
+		"IntenZ\Configs\Assets\textures\map\map_chernarus_co.paa",
+		"IntenZ\Configs\Assets\textures\map\survivor_co.paa",
+		"IntenZ\Configs\Assets\textures\map\survivor_side_co.paa"
 	};
 };
 class IntenZMap_Survivor_open: IntenZMap_Survivor {};
@@ -32,9 +32,9 @@ class IntenZMap_Bandit: ChernarusMap
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Assets\textures\map\map_chernarus_co.paa",
-		"IntenZ\Assets\textures\map\bandit_co.paa",
-		"IntenZ\Assets\textures\map\bandit_side_co.paa"
+		"IntenZ\Configs\Assets\textures\map\map_chernarus_co.paa",
+		"IntenZ\Configs\Assets\textures\map\bandit_co.paa",
+		"IntenZ\Configs\Assets\textures\map\bandit_side_co.paa"
 	};
 };
 class IntenZMap_Bandit_open: IntenZMap_Bandit {};
@@ -42,9 +42,9 @@ class IntenZMap_Burned: ChernarusMap
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Assets\textures\map\map_chernarus_co.paa",
-		"IntenZ\Assets\textures\map\burned_co.paa",
-		"IntenZ\Assets\textures\map\burned_side_co.paa"
+		"IntenZ\Configs\Assets\textures\map\map_chernarus_co.paa",
+		"IntenZ\Configs\Assets\textures\map\burned_co.paa",
+		"IntenZ\Configs\Assets\textures\map\burned_side_co.paa"
 	};
 };
 class IntenZMap_Burned_open: IntenZMap_Burned {};
@@ -52,9 +52,9 @@ class IntenZMap_Bloody: ChernarusMap
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Assets\textures\map\map_chernarus_co.paa",
-		"IntenZ\Assets\textures\map\bloody_co.paa",
-		"IntenZ\Assets\textures\map\bloody_side_co.paa"
+		"IntenZ\Configs\Assets\textures\map\map_chernarus_co.paa",
+		"IntenZ\Configs\Assets\textures\map\bloody_co.paa",
+		"IntenZ\Configs\Assets\textures\map\bloody_side_co.paa"
 	};
 };
 class IntenZMap_Bloody_open: IntenZMap_Bloody {};
