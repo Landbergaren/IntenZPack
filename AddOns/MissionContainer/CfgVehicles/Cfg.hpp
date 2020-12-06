@@ -14,6 +14,7 @@ class cfgVehicles
 		{
 			itemsCargoSize[]={10,10};
 		};
+		canBeDigged=0;
 	};
 	class Mission_Tent: Mission_Container
 	{

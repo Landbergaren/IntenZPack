@@ -8,58 +8,18 @@ modded class PlantBase extends ItemBase
 	
 	private int 	m_GrowthStagesCount; 
 	private int 	m_CropsCount;
-	private bool 	m_HasCrops;
-	private string 	m_CropsType; 
 	private float 	m_PlantMaterialMultiplier; 
 	
-	private int 	m_PlantState;
-	private int 	m_PlantStateIndex;
-	private float 	m_CurrentPlantMaterialQuantity;
-	
-	private bool 	m_IsInfested;
-	private float 	m_SprayQuantity;
-	
 	int 	m_DeleteDryPlantTime; 			// For how long in seconds can an unwatered plant exist before it disappears
-	int 	m_SpoiledRemoveTime;			// For how long in seconds a spoiled plant will exist
 	int 	m_FullMaturityTime;				// How much time needs plant to be full grown in seconds
 	int 	m_SpoilAfterFullMaturityTime;	// How long in seconds it takes for plant to be spoiled after it is full grown
 	int 	m_StateChangeTime;				// For how long in seconds will plant stay in one state before its going to next state
 	
 	private GardenBase m_GardenBase = NULL;
-
-	private PluginHorticulture m_ModuleHorticulture;
 	
-	ref Environment		m_Environment;
+	float m_Temperature;
 
-	
-	void PlantBase()
-	{
-		m_ModuleHorticulture = PluginHorticulture.Cast( GetPlugin( PluginHorticulture ) );
-		
-		m_SprayUsage = 5;
-		m_DeleteDryPlantTime = (60 * 10) + Math.RandomInt(0, 60 * 2);
-		m_SpoiledRemoveTime = (60 * 20) + Math.RandomInt(0, 60 * 5);
-		
-		m_InfestationChance = 0.0; // Temporarily disabled until its fixed. Infestation is not visualy persistent over server restarts and m_SpoiledRemoveTimer crashes when it's meant to delete the plant.
-		
-		string plant_type = this.GetType();
-		m_GrowthStagesCount = GetGame().ConfigGetInt( "cfgVehicles " + plant_type + " Horticulture GrowthStagesCount" );
-		m_CropsCount = GetGame().ConfigGetInt( "cfgVehicles " + plant_type + " Horticulture CropsCount" );
-		GetGame().ConfigGetText( "cfgVehicles " + plant_type + " Horticulture CropsType", m_CropsType );
-
-		m_PlantStateIndex = -1;
-		m_CurrentPlantMaterialQuantity = 0;
-		m_IsInfested = false;
-		m_SprayQuantity = 0.0;
-		m_HasCrops = true;
-		
-		
-		RegisterNetSyncVariableBool("m_HasCrops");
-		RegisterNetSyncVariableInt("m_PlantState");
-		RegisterNetSyncVariableInt("m_PlantStateIndex");
-	}
-
-	void Init( GardenBase garden_base, float fertility, float harvesting_efficiency, float water )
+	override void Init( GardenBase garden_base, float fertility, float harvesting_efficiency, float water )
 	{
 		m_GardenBase = garden_base;
 		
@@ -99,9 +59,11 @@ modded class PlantBase extends ItemBase
 		}
 	}
 
-	bool IsGrowing()	//Stop Plant growing beneath a certain temperature
+	override bool IsGrowing()	//Stop Plant growing beneath a certain temperature
 	{
-		if ( m_Environment.GetTemperature() < 8 )
+		m_Temperature = GetGame().GetMission().GetWorldData().GetBaseEnvTemperature();
+		
+		if ( m_Temperature < 8 )
 		{
 			return false;
 		}		
