@@ -4,6 +4,18 @@ class Clothing: Clothing_Base {};
 #include "TShirt_ColorBase\Cfg.hpp"
 #include "PlateCarrierVest\Cfg.hpp"
 #include "PlateCarrierHolster\Cfg.hpp"
+#include "CombatBoots_ColorBase\Cfg.hpp"
+#include "OMNOGloves_ColorBase\Cfg.hpp"
+#include "Mich2001Helmet\Cfg.hpp"
+#include "Ssh68Helmet\Cfg.hpp"
+#include "BallisticHelmet_ColorBase\Cfg.hpp"
+#include "Balaclava3Holes_ColorBase\Cfg.hpp"
+#include "BalaclavaMask_ColorBase\Cfg.hpp"
+#include "CoyoteBag_ColorBase\Cfg.hpp"
+#include "HuntingBag\Cfg.hpp"
+#include "TortillaBag\Cfg.hpp"
+#include "SmershVest\Cfg.hpp"
+#include "SmershBag\Cfg.hpp"
 
 class BeanieHat_ColorBase: Clothing
 {	
@@ -44,11 +56,6 @@ class DirtBikeHelmet_ColorBase: Clothing
 {
 	absorbency=0;
 	heatIsolation=0.5;
-};
-class Mich2001Helmet: Clothing
-{
-	absorbency=0;
-	heatIsolation=0.50000001;
 };
 class QuiltedJacket_ColorBase: Clothing
 {

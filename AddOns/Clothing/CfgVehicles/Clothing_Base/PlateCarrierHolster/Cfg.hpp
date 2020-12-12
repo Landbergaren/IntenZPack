@@ -1,6 +1,4 @@
-class PlateCarrierHolster: Clothing {};
-
-class PlateCarrierHolster_IntenZ: PlateCarrierHolster
+class PlateCarrierHolster: Clothing
 {
 	hiddenSelections[]=
 	{
@@ -8,6 +6,10 @@ class PlateCarrierHolster_IntenZ: PlateCarrierHolster
 		"camoMale",
 		"camoFemale"
 	};
+};
+
+class PlateCarrierHolster_IntenZ: PlateCarrierHolster
+{
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\intenz_co.paa",
@@ -17,12 +19,6 @@ class PlateCarrierHolster_IntenZ: PlateCarrierHolster
 };
 class PlateCarrierHolster_White: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\white_co.paa",
@@ -32,12 +28,6 @@ class PlateCarrierHolster_White: PlateCarrierHolster
 };
 class PlateCarrierHolster_Black: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\black_co.paa",
@@ -47,12 +37,6 @@ class PlateCarrierHolster_Black: PlateCarrierHolster
 };
 class PlateCarrierHolster_Grey: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\grey_co.paa",
@@ -62,12 +46,6 @@ class PlateCarrierHolster_Grey: PlateCarrierHolster
 };
 class PlateCarrierHolster_Blue: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\blue_co.paa",
@@ -77,12 +55,6 @@ class PlateCarrierHolster_Blue: PlateCarrierHolster
 };
 class PlateCarrierHolster_LightGreen: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa",
@@ -92,12 +64,6 @@ class PlateCarrierHolster_LightGreen: PlateCarrierHolster
 };
 class PlateCarrierHolster_Green: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\green_co.paa",
@@ -107,12 +73,6 @@ class PlateCarrierHolster_Green: PlateCarrierHolster
 };
 class PlateCarrierHolster_Dark_Green: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{
 		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa",
@@ -122,12 +82,6 @@ class PlateCarrierHolster_Dark_Green: PlateCarrierHolster
 };
 class PlateCarrierHolster_Brown: PlateCarrierHolster
 {
-	hiddenSelections[]=
-	{
-		"camoGround",
-		"camoMale",
-		"camoFemale"
-	};
 	hiddenSelectionsTextures[]=
 	{		
 		"IntenZ\Clothing\Assets\Vests\platecarrier\brown_co.paa",
