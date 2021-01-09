@@ -8,10 +8,6 @@ class Mission_Container : WoodenCrate
 	{
 		return false;
 	}
-	override bool CanReceiveItemIntoCargo( EntityAI item )
-	{
-		return false;
-	}
 	override bool CanPutAsAttachment( EntityAI parent )
 	{
 		return false;

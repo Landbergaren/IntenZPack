@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+	<inputs>
+		<actions>
+			<input name="UAEmoteBind_ID_EMOTE_GREETING" 	loc="STR_iz_USRACT_ID_EMOTE_GREETING" />
+			<input name="UAEmoteBind_ID_EMOTE_SOS" 			loc="STR_iz_USRACT_ID_EMOTE_SOS" />
+			<input name="UAEmoteBind_ID_EMOTE_HEART" 		loc="STR_iz_USRACT_ID_EMOTE_HEART" />
+			<input name="UAEmoteBind_ID_EMOTE_TAUNT" 		loc="STR_iz_USRACT_ID_EMOTE_TAUNT" />
+			<input name="UAEmoteBind_ID_EMOTE_SURRENDER" 	loc="STR_iz_USRACT_ID_EMOTE_SURRENDER" />
+			<input name="UAEmoteBind_ID_EMOTE_TAUNTKISS" 	loc="STR_iz_USRACT_ID_EMOTE_TAUNTKISS" />
+			<input name="UAEmoteBind_ID_EMOTE_POINT" 		loc="STR_iz_USRACT_ID_EMOTE_POINT" />
+			<input name="UAEmoteBind_ID_EMOTE_TAUNTELBOW" 	loc="STR_iz_USRACT_ID_EMOTE_TAUNTELBOW" />
+			<input name="UAEmoteBind_ID_EMOTE_THUMB" 		loc="STR_iz_USRACT_ID_EMOTE_THUMB" />
+			<input name="UAEmoteBind_ID_EMOTE_THROAT" 		loc="STR_iz_USRACT_ID_EMOTE_THROAT" />
+			<input name="UAEmoteBind_ID_EMOTE_SUICIDE" 		loc="STR_iz_USRACT_ID_EMOTE_SUICIDE" />
+
+			<input name="UAEmoteBind_ID_EMOTE_RPS" 			loc="STR_iz_USRACT_ID_EMOTE_RPS" />
+			<input name="UAEmoteBind_ID_EMOTE_RPS_R" 		loc="STR_iz_USRACT_ID_EMOTE_RPS_R" />
+			<input name="UAEmoteBind_ID_EMOTE_RPS_P" 		loc="STR_iz_USRACT_ID_EMOTE_RPS_P" />
+			<input name="UAEmoteBind_ID_EMOTE_RPS_S" 		loc="STR_iz_USRACT_ID_EMOTE_RPS_S" />
+
+			<input name="UAEmoteBind_ID_EMOTE_LYINGDOWN" 	loc="STR_iz_USRACT_ID_EMOTE_LYINGDOWN" />
+			
+			<input name="UAEmoteBind_ID_EMOTE_FACEPALM" 	loc="STR_iz_USRACT_ID_EMOTE_FACEPALM" />
+			<input name="UAEmoteBind_ID_EMOTE_DANCE" 		loc="STR_iz_USRACT_ID_EMOTE_DANCE" />
+			<input name="UAEmoteBind_ID_EMOTE_CAMPFIRE" 	loc="STR_iz_USRACT_ID_EMOTE_CAMPFIRE" />
+			<input name="UAEmoteBind_ID_EMOTE_SITA" 		loc="STR_iz_USRACT_ID_EMOTE_SITA" />
+			<input name="UAEmoteBind_ID_EMOTE_SITB" 		loc="STR_iz_USRACT_ID_EMOTE_SITB" />
+			<input name="UAEmoteBind_ID_EMOTE_THUMBDOWN" 	loc="STR_iz_USRACT_ID_EMOTE_THUMBDOWN" />
+			<input name="UAEmoteBind_ID_EMOTE_DABBING" 		loc="STR_iz_USRACT_ID_EMOTE_DABBING" />
+			<input name="UAEmoteBind_ID_EMOTE_TIMEOUT" 		loc="STR_iz_USRACT_ID_EMOTE_TIMEOUT" />
+			<input name="UAEmoteBind_ID_EMOTE_CLAP" 		loc="STR_iz_USRACT_ID_EMOTE_CLAP" />
+			<input name="UAEmoteBind_ID_EMOTE_SILENT" 		loc="STR_iz_USRACT_ID_EMOTE_SILENT" />
+			<input name="UAEmoteBind_ID_EMOTE_SALUTE" 		loc="STR_iz_USRACT_ID_EMOTE_SALUTE" />
+			<input name="UAEmoteBind_ID_EMOTE_WATCHING" 	loc="STR_iz_USRACT_ID_EMOTE_WATCHING" />
+			<input name="UAEmoteBind_ID_EMOTE_HOLD" 		loc="STR_iz_USRACT_ID_EMOTE_HOLD" />
+			<input name="UAEmoteBind_ID_EMOTE_LISTENING" 	loc="STR_iz_USRACT_ID_EMOTE_LISTENING" />
+			<input name="UAEmoteBind_ID_EMOTE_POINTSELF" 	loc="STR_iz_USRACT_ID_EMOTE_POINTSELF" />
+			<input name="UAEmoteBind_ID_EMOTE_LOOKATME" 	loc="STR_iz_USRACT_ID_EMOTE_LOOKATME" />
+			<input name="UAEmoteBind_ID_EMOTE_TAUNTTHINK" 	loc="STR_iz_USRACT_ID_EMOTE_TAUNTTHINK" />
+			<input name="UAEmoteBind_ID_EMOTE_MOVE" 		loc="STR_iz_USRACT_ID_EMOTE_MOVE" />
+			<input name="UAEmoteBind_ID_EMOTE_DOWN" 		loc="STR_iz_USRACT_ID_EMOTE_DOWN" />
+			<input name="UAEmoteBind_ID_EMOTE_COME" 		loc="STR_iz_USRACT_ID_EMOTE_COME" />
+			<input name="UAEmoteBind_ID_EMOTE_NOD" 			loc="STR_iz_USRACT_ID_EMOTE_NOD" />
+			<input name="UAEmoteBind_ID_EMOTE_SHAKE" 		loc="STR_iz_USRACT_ID_EMOTE_SHAKE" />
+			<input name="UAEmoteBind_ID_EMOTE_SHRUG" 		loc="STR_iz_USRACT_ID_EMOTE_SHRUG" />
+			<input name="UAEmoteBind_ID_EMOTE_VOMIT" 		loc="STR_iz_USRACT_ID_EMOTE_VOMIT" />
+		</actions>
+	</inputs>
+	<preset>
+		<input name="UAEmoteBind_ID_EMOTE_LYINGDOWN">
+			<btn name="kSubstract" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_GREETING">
+			<btn name="kF1" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_SOS">
+			<btn name="kF2" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_HEART">
+			<btn name="kF3" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_TAUNT">
+			<btn name="kF4" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_SURRENDER">
+			<btn name="kF5" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_TAUNTKISS">
+			<btn name="kF6" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_POINT">
+			<btn name="kF7" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_TAUNTELBOW">
+			<btn name="kF8" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_THUMB">
+			<btn name="kF9" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_THROAT">
+			<btn name="kF10" />
+		</input>
+		<input name="UAEmoteBind_ID_EMOTE_SUICIDE">
+			<btn name="kF11" />
+		</input>
+	</preset>
+</modded_inputs>

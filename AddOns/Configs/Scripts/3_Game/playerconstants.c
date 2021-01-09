@@ -7,7 +7,10 @@ modded class PlayerConstants
 
 	static const float LOW_ENERGY_THRESHOLD = 500;
 	
-	static const float METABOLIC_SPEED_ENERGY_JOG = 0.3;	//Vanilla 0.3
+	static const float METABOLIC_SPEED_ENERGY_JOG = 0.35;	//Vanilla 0.3
+	static const float METABOLIC_SPEED_ENERGY_SPRINT = 1.2;	//Vanilla 0.6
+	
+	static const float ENERGY_LOSS_HC_MINUS_HIGH = 0.40;	//Vanilla 0.45
 	
 	//--------------------------------------------------------
 	
