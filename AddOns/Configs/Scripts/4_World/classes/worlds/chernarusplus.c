@@ -28,19 +28,6 @@ modded class ChernarusPlusData extends WorldData
 	protected int m_choosenWeather = 1;
 	protected int m_lastWeather = 0;
 
-	override void Init()
-	{
-		super.Init();
-
-		// new temperature curve settings
-		m_Sunrise_Jan = 8.54;
-		m_Sunset_Jan = 15.52;
-		m_Sunrise_Jul = 3.26;
-		m_Sunset_Jul = 20.73;
-		m_MaxTemps = { 3, 5, 3,14,26,24,26,25,21,16,10, 5};
-		m_MinTemps = {-3,-2,-3, 4,18,14,18,17,12, 7, 4, 0};
-	}
-	
 	override bool WeatherOnBeforeChange( EWeatherPhenomenon type, float actual, float change, float time )
 	{
 		float phmnValue 0;

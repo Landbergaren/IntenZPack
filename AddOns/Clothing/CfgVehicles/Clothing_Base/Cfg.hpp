@@ -16,6 +16,10 @@ class Clothing: Clothing_Base {};
 #include "TortillaBag\Cfg.hpp"
 #include "SmershVest\Cfg.hpp"
 #include "SmershBag\Cfg.hpp"
+#include "ChildBag_ColorBase\Cfg.hpp"
+#include "BDUJacket\Cfg.hpp"
+#include "BDUPants\Cfg.hpp"
+#include "PressVest_ColorBase\Cfg.hpp"
 
 class BeanieHat_ColorBase: Clothing
 {	

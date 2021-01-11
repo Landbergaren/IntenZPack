@@ -6,6 +6,12 @@ class PlateCarrierHolster: Clothing
 		"camoMale",
 		"camoFemale"
 	};
+	hiddenSelectionsTextures[]=
+	{
+		"\DZ\characters\vests\data\ballisticvest_co.paa",
+		"\DZ\characters\vests\data\ballisticvest_co.paa",
+		"\DZ\characters\vests\data\ballisticvest_co.paa"
+	};
 };
 
 class PlateCarrierHolster_IntenZ: PlateCarrierHolster

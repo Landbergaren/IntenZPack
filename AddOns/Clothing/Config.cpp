@@ -13,7 +13,8 @@ class CfgPatches
 			"DZ_Characters",
 			"DZ_Characters_Tops",
 			"DZ_Characters_Vests",
-			"DZ_Characters_Headgear"
+			"DZ_Characters_Headgear",
+			"DZ_Characters_Backpacks"
 		};
 	};
 };

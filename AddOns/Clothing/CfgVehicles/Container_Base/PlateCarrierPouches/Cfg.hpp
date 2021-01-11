@@ -6,7 +6,14 @@ class PlateCarrierPouches: Container_Base
 		"camoMale",
 		"camoFemale"
 	};
+	hiddenSelectionsTextures[]=
+	{
+		"\DZ\characters\vests\data\ballisticvest_co.paa",
+		"\DZ\characters\vests\data\ballisticvest_co.paa",
+		"\DZ\characters\vests\data\ballisticvest_co.paa"
+	};
 };
+
 class PlateCarrierPouches_IntenZ: PlateCarrierPouches
 {
 	hiddenSelectionsTextures[]=

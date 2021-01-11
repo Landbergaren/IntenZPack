@@ -19,3 +19,13 @@ class TortillaBag_White: TortillaBag_ColorBase
 		"IntenZ\Clothing\Assets\Backpacks\TortillaBag\white_co.paa"
 	};
 };
+class TortillaBag_Black: TortillaBag_ColorBase
+{
+	scope=2;
+	hiddenSelectionsTextures[]=
+	{
+		"IntenZ\Clothing\Assets\Backpacks\TortillaBag\black_co.paa",
+		"IntenZ\Clothing\Assets\Backpacks\TortillaBag\black_co.paa",
+		"IntenZ\Clothing\Assets\Backpacks\TortillaBag\black_co.paa"
+	};
+};
