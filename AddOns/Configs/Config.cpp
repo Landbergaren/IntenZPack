@@ -31,8 +31,7 @@ class CfgPatches
 			"DZ_Pistols",
 			"DZ_Vehicles_Parts",
 			"DZ_Vehicles_Wheeled",
-			"DZ_Sounds_Effects",
-			"DZ_Worlds_Chernarusplus_World"
+			"DZ_Sounds_Effects"
 		};
 	};
 };

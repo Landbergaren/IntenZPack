@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class IntenZ_Night
+	class IntenZ_Map
 	{
 		units[] = {};
 		weapons[] = {};
@@ -8,29 +8,27 @@ class CfgPatches
 		requiredAddons[] = 
 		{
 			"DZ_Data",
-			"DZ_Scripts"
+			"DZ_Scripts",
+			
+			"DZ_Gear_Navigation",
+			"DZ_Worlds_Chernarusplus_World"
 		};
 	};
 };
 
 class CfgMods
 {
-	class IntenZ_Night
+	class IntenZ_Map
 	{
 		type = "mod";
-		dependencies[] = {"Game","World"};
+		dependencies[] = {"World"};
 		
 		class defs
-		{	
-			class gameScriptModule
-			{
-				value = "";
-				files[] = {"IntenZ\Night\Scripts\3_Game"};
-			};
+		{
 			class worldScriptModule
 			{
 				value = "";
-				files[] = {"IntenZ\Night\Scripts\4_World"};
+				files[] = {"IntenZ\Map\Scripts\4_World"};
 			};
 		};
 	};

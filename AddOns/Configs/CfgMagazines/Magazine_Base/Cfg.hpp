@@ -195,6 +195,11 @@ class Mag_VSS_10Rnd: Magazine_Base
 	displayName="$STR_iz_CfgMagazines_Mag_VSS_10Rnd0";
 	descriptionShort="$STR_iz_CfgMagazines_Mag_VSS_10Rnd1";
 };
+class Mag_VAL_20Rnd: Magazine_Base
+{
+	displayName="$STR_iz_CfgMagazines_Mag_VAL_20Rnd0";
+	descriptionShort="$STR_iz_CfgMagazines_Mag_VAL_20Rnd1";
+};
 class Mag_M249_Box200Rnd: Magazine_Base
 {
 	displayName="$STR_iz_CfgMagazines_Mag_M249_Box200Rnd0";

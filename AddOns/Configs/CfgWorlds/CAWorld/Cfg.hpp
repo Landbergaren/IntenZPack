@@ -6,4 +6,3 @@ class CAWorld: DefaultWorld
 	};
 	volFogOffset = 1;
 };
-#include "ChernarusPlus\Cfg.hpp"

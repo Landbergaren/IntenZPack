@@ -6,6 +6,7 @@ class PressVest_ColorBase: Clothing
 		"camoMale",
 		"camoFemale"
 	};
+	itemSize[]={2,3};
 };
 
 class PressVest_IntenZ: PressVest_ColorBase
@@ -23,22 +24,22 @@ class PressVest_IntenZ: PressVest_ColorBase
 		"IntenZ\Clothing\Assets\Vests\PressVest\intenz.rvmat",
 		"IntenZ\Clothing\Assets\Vests\PressVest\intenz.rvmat"
 	};
-/*	class DamageSystem
+	class DamageSystem
 	{
 		class GlobalHealth
 		{
 			class Health
 			{
-				hitpoints=50;
+				hitpoints=100;
 				healthLevels[]=
 				{
-					{1,			{"IntenZ\Clothing\Assets\Vests\PressVest\intenz.rvmat"}},
-					{0.69999999,{"IntenZ\Clothing\Assets\Vests\PressVest\intenz.rvmat"}},
-					{0.5,		{"IntenZ\Clothing\Assets\Vests\PressVest\intenz_damage.rvmat"}},
-					{0.30000001,{"IntenZ\Clothing\Assets\Vests\PressVest\intenz_damage.rvmat"}},
-					{0,			{"IntenZ\Clothing\Assets\Vests\PressVest\intenz_destruct.rvmat"}}
+					{1.01,{"DZ\characters\vests\Data\PressVest.rvmat"}},
+					{0.70,{"IntenZ\Clothing\Assets\Vests\PressVest\intenz.rvmat"}},
+					{0.50,{"IntenZ\Clothing\Assets\Vests\PressVest\intenz_damage.rvmat"}},
+					{0.30,{"IntenZ\Clothing\Assets\Vests\PressVest\intenz_damage.rvmat"}},
+					{0.01,{"IntenZ\Clothing\Assets\Vests\PressVest\intenz_destruct.rvmat"}}
 				};
 			};
 		};
-	};*/
+	};
 };

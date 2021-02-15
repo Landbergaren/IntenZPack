@@ -90,39 +90,39 @@ modded class DayZPlayerImplement extends DayZPlayer
 		EmoteConstants.ID_EMOTE_VOMIT,
 	};
 
-    void HandleEmotesBind()
-    {
-        // Just make extra sure!
-        if (GetGame().IsMultiplayer() && !GetGame().IsClient())
-            return;
+	void HandleEmotesBind()
+	{
+		// Just make extra sure!
+		if (GetGame().IsMultiplayer() && !GetGame().IsClient())
+			return;
+		
+		PlayerBase player = PlayerBase.Cast(this);
+		if (!player || player.IsRestrained() || player.IsUnconscious())
+			return;
+		
+		EmoteManager em = player.GetEmoteManager();
+		if (!em)
+			return;
+		
+		UAInputAPI uapi = GetUApi();
+		if (!uapi)
+			return;
+		
+		// Cycle through the custom user actions
+		for (int i = 0; i < EMOTES_COUNT; ++i)
+		{
+			if (uapi.GetInputByName(m_EmotesBindUA[i]).LocalPress())
+			{
+				em.CreateEmoteCBFromMenu(m_EmotesBindID[i]);
+				break;
+			}
+		}
+	};
 
-        PlayerBase player = PlayerBase.Cast(this);
-        if (!player || player.IsRestrained() || player.IsUnconscious())
-            return;
-
-        EmoteManager em = player.GetEmoteManager();
-        if (!em)
-            return;
-
-        UAInputAPI uapi = GetUApi();
-        if (!uapi)
-            return;
-
-        // Cycle through the custom user actions
-        for (int i = 0; i < EMOTES_COUNT; ++i)
-        {
-            if (uapi.GetInputByName(m_EmotesBindUA[i]).LocalPress())
-            {
-                em.CreateEmoteCBFromMenu(m_EmotesBindID[i]);
-                break;
-            }
-        }
-    };
-
-    override void CommandHandler(float pDt, int pCurrentCommandID, bool pCurrentCommandFinished)
-    {
-        super.CommandHandler(pDt, pCurrentCommandID, pCurrentCommandFinished);
-
-        HandleEmotesBind();
-    };
+	override void CommandHandler(float pDt, int pCurrentCommandID, bool pCurrentCommandFinished)
+	{
+		super.CommandHandler(pDt, pCurrentCommandID, pCurrentCommandFinished);
+	
+		HandleEmotesBind();
+	};
 };

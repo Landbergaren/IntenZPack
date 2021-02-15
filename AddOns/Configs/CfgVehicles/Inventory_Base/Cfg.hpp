@@ -4,7 +4,6 @@ class Inventory_Base;
 #include "CarDoor\Cfg.hpp"
 #include "ItemOptics\Cfg.hpp"
 #include "ItemSuppressor\Cfg.hpp"
-//#include "ItemMap\Cfg.hpp"
 #include "Flag_Base\Cfg.hpp"
 #include "Leather\Cfg.hpp"
 

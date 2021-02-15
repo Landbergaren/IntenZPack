@@ -10,7 +10,7 @@ class LightingNew
 {
 	class C_Night
 	{
-		sunAngle = -18;
+		sunAngle = -10;
 		sunOrMoon = 0;
 		filmGrainIntensity = 0.0100;
 		
@@ -37,7 +37,7 @@ class LightingNew
 	};
 	class C_Astro1
 	{
-		sunAngle = -17;
+		sunAngle = -9;
 		sunOrMoon = 0.5;
 		filmGrainIntensity = 0.0075;
 		
@@ -64,7 +64,7 @@ class LightingNew
 	};
 	class C_Astro2
 	{
-		sunAngle = -16;
+		sunAngle = -8;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0075;
 		
@@ -91,7 +91,7 @@ class LightingNew
 	};
 	class C_Astro3
 	{
-		sunAngle = -14;
+		sunAngle = -7;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0075;
 		
@@ -118,7 +118,7 @@ class LightingNew
 	};
 	class C_Nautical1
 	{
-		sunAngle = -12;
+		sunAngle = -6;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0050;
 		
@@ -145,7 +145,7 @@ class LightingNew
 	};
 	class C_Nautical2
 	{
-		sunAngle = -10;
+		sunAngle = -5;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0050;
 		
@@ -172,7 +172,7 @@ class LightingNew
 	};
 	class C_Nautical3
 	{
-		sunAngle = -8;
+		sunAngle = -4;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0050;
 		
@@ -199,7 +199,7 @@ class LightingNew
 	};
 	class C_Civil1
 	{
-		sunAngle = -6;
+		sunAngle = -3;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0025;
 		
@@ -226,7 +226,7 @@ class LightingNew
 	};
 	class C_Civil2
 	{
-		sunAngle = -4;
+		sunAngle = -2;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0025;
 		
@@ -253,7 +253,7 @@ class LightingNew
 	};
 	class C_Civil3
 	{
-		sunAngle = -2;
+		sunAngle = -1;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0025;
 		
@@ -442,7 +442,7 @@ class LightingNew
 	};
 	class O_Night
 	{
-		sunAngle = -18;
+		sunAngle = -10;
 		sunOrMoon = 0;
 		filmGrainIntensity = 0.0100;
 		
@@ -469,7 +469,7 @@ class LightingNew
 	};
 	class O_Astro1
 	{
-		sunAngle = -17;
+		sunAngle = -9;
 		sunOrMoon = 0.5;
 		filmGrainIntensity = 0.0075;
 		
@@ -496,7 +496,7 @@ class LightingNew
 	};
 	class O_Nautical1
 	{
-		sunAngle = -12;
+		sunAngle = -6;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0050;
 		
@@ -506,7 +506,7 @@ class LightingNew
 		ambient[]				= {0.0360,0.0570,0.0850};
 		groundReflection[]		= {0.0100,0.0100,0.0150};
 		sky[]					= {0.0360,0.0560,0.0870};
-		skyAroundSun[]			= {0.1011,0.1063,0.0926};
+		skyAroundSun[]			= {0.0360,0.0560,0.0870};
 		
 		desiredLuminanceCoefCloud 	=  0.000;
 		diffuseCloud[]				= {0.0360,0.0570,0.0850};
@@ -523,7 +523,7 @@ class LightingNew
 	};
 	class O_Civil1
 	{
-		sunAngle = -6;
+		sunAngle = -3;
 		sunOrMoon = 1;
 		filmGrainIntensity = 0.0025;
 		

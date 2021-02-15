@@ -1,4 +1,8 @@
 class CfgWorlds
 {
-	#include "DefaultWorld\Cfg.hpp"
+	class DefaultWorld
+	{
+		class Weather;
+	};
+	#include "CAWorld\Cfg.hpp"
 };
