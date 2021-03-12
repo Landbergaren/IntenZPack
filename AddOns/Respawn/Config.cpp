@@ -8,7 +8,9 @@ class CfgPatches
 		requiredAddons[] = 
 		{
 			"DZ_Data",
-			"DZ_Scripts"
+			"DZ_Scripts",
+			
+			"JM_CF_Scripts"
 		};
 	};
 };
@@ -18,15 +20,10 @@ class CfgMods
 	class IntenZ_Respawn
 	{
 		type = "mod";
-		dependencies[] = {"Game","World","Mission"};
+		dependencies[] = {"World","Mission"};
 		
 		class defs
-		{	
-			class gameScriptModule
-			{
-				value = "";
-				files[] = {"IntenZ\Respawn\Scripts\3_Game"};
-			};
+		{
 			class worldScriptModule
 			{
 				value = "";
