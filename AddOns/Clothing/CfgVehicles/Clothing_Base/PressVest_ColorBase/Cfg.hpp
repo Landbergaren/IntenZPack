@@ -7,6 +7,16 @@ class PressVest_ColorBase: Clothing
 		"camoFemale"
 	};
 	itemSize[]={2,3};
+	class DamageSystem
+	{
+		class GlobalHealth
+		{
+			class Health
+			{
+				hitpoints=75;
+			};
+		};
+	};
 };
 
 class PressVest_IntenZ: PressVest_ColorBase
@@ -30,7 +40,6 @@ class PressVest_IntenZ: PressVest_ColorBase
 		{
 			class Health
 			{
-				hitpoints=100;
 				healthLevels[]=
 				{
 					{1.01,{"DZ\characters\vests\Data\PressVest.rvmat"}},

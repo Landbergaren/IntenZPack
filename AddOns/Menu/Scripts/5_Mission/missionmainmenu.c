@@ -4,9 +4,9 @@ modded class MissionMainMenu extends MissionBase
 	{
 		super.OnKeyRelease(key);
 		
-		if ( key == KeyCode.KC_NUMPADENTER )
+		if ( key == KeyCode.KC_N )
 		{
-			Print("[INTENZ] Numpad enter pressed, changing menu music.");
+			Print("[INTENZ] N pressed, changing menu music.");
 
 			PlayNextMusic(m_MenuMusic);
 		}

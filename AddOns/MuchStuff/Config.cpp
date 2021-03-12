@@ -19,16 +19,7 @@ class CfgMods
 	class IntenZ_MuchStuff
 	{
 		type = "mod";
-		dependencies[] = {"World"};
-		
-		class defs
-		{
-			class worldScriptModule
-			{
-				value = "";
-				files[] = {"IntenZ\MuchStuff\Scripts\4_World"};
-			};
-		};
+		dependencies[] = {};
 	};
 };
 
@@ -43,6 +34,6 @@ class CfgVehicles
 	class WoodenCrate;
 	class Mission_Container: WoodenCrate
 	{
-		model = "\MuchStuffPack\MSP_Storage_crates\militarycrate\militarycrate.p3d";
+	//	model = "\MuchStuffPack\MSP_Storage_crates\militarycrate\militarycrate.p3d";
 	};
 };

@@ -26,7 +26,7 @@ modded class PlantBase extends ItemBase
 		float divided = (float) ((60 * 60 * 2) + Math.RandomInt(0, 60 * 15)) / fertility;
 		m_FullMaturityTime = divided;
 		
-		divided = (float)((60 * 30) + Math.RandomInt(0, 60 * 30)) * fertility;
+		divided = (float)((60 * 60 * 24) + Math.RandomInt(0, 60 * 60 * 48)) * fertility;
 		m_SpoilAfterFullMaturityTime = divided;
 
 		divided = (float)((float)m_FullMaturityTime / ((float)m_GrowthStagesCount - 2.0));
@@ -76,4 +76,4 @@ modded class PlantBase extends ItemBase
 			return false;
 		}
 	}
-}
+};

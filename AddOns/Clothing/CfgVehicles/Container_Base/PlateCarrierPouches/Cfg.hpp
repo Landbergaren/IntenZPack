@@ -63,9 +63,9 @@ class PlateCarrierPouches_LightGreen: PlateCarrierPouches
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa"
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa"
 	};
 };
 class PlateCarrierPouches_Green: PlateCarrierPouches
@@ -81,9 +81,9 @@ class PlateCarrierPouches_Dark_Green: PlateCarrierPouches
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa"
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa"
 	};
 };
 class PlateCarrierPouches_Brown: PlateCarrierPouches

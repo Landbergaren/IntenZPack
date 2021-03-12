@@ -63,9 +63,9 @@ class PlateCarrierHolster_LightGreen: PlateCarrierHolster
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa"
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa"
 	};
 };
 class PlateCarrierHolster_Green: PlateCarrierHolster
@@ -81,9 +81,9 @@ class PlateCarrierHolster_Dark_Green: PlateCarrierHolster
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa"
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa"
 	};
 };
 class PlateCarrierHolster_Brown: PlateCarrierHolster

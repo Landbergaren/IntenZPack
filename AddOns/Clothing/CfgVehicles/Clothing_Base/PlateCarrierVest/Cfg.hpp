@@ -8,9 +8,9 @@ class PlateCarrierVest: Clothing
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\DZ\characters\vests\data\ballisticvest_co.paa",
-		"\DZ\characters\vests\data\ballisticvest_co.paa",
-		"\DZ\characters\vests\data\ballisticvest_co.paa"
+		"IntenZ\Clothing\Assets\Vests\platecarrier\beige_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\beige_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\beige_co.paa"
 	};
 };
 
@@ -63,9 +63,9 @@ class PlateCarrierVest_LightGreen: PlateCarrierVest
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\light_green_co.paa"
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_bright_co.paa"
 	};
 };
 class PlateCarrierVest_Green: PlateCarrierVest
@@ -81,9 +81,9 @@ class PlateCarrierVest_Dark_Green: PlateCarrierVest
 {
 	hiddenSelectionsTextures[]=
 	{
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa",
-		"IntenZ\Clothing\Assets\Vests\platecarrier\dark_green_co.paa"
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa",
+		"IntenZ\Clothing\Assets\Vests\platecarrier\green_dark_co.paa"
 	};
 };
 class PlateCarrierVest_Brown: PlateCarrierVest

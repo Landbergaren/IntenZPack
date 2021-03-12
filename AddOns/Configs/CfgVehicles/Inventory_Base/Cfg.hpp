@@ -4,7 +4,6 @@ class Inventory_Base;
 #include "CarDoor\Cfg.hpp"
 #include "ItemOptics\Cfg.hpp"
 #include "ItemSuppressor\Cfg.hpp"
-#include "Flag_Base\Cfg.hpp"
 #include "Leather\Cfg.hpp"
 
 class ItemBarrel: Inventory_Base {};
@@ -47,26 +46,51 @@ class AK_WoodBttstck: Inventory_Base
 {
 	displayName="$STR_iz_cfgVehicles_AK_WoodBttstck0";
 	descriptionShort="$STR_iz_cfgVehicles_AK_WoodBttstck1";
+	inventorySlot[]=
+	{
+		"weaponButtstockSaiga",
+		"weaponButtstockAK"
+	};
 };
 class AK74_WoodBttstck: Inventory_Base
 {
 	displayName="$STR_iz_cfgVehicles_AK74_WoodBttstck0";
 	descriptionShort="$STR_iz_cfgVehicles_AK74_WoodBttstck1";
+	inventorySlot[]=
+	{
+		"weaponButtstockSaiga",
+		"weaponButtstockAK"
+	};
 };
 class AK_FoldingBttstck: Inventory_Base
 {
 	displayName="$STR_iz_cfgVehicles_AK_FoldingBttstck0";
 	descriptionShort="$STR_iz_cfgVehicles_AK_FoldingBttstck1";
+	inventorySlot[]=
+	{
+		"weaponButtstockSaiga",
+		"weaponButtstockAK"
+	};
 };
 class AK_PlasticBttstck: Inventory_Base
 {
 	displayName="$STR_iz_cfgVehicles_AK_PlasticBttstck0";
 	descriptionShort="$STR_iz_cfgVehicles_AK_PlasticBttstck1";
+	inventorySlot[]=
+	{
+		"weaponButtstockSaiga",
+		"weaponButtstockAK"
+	};
 };
 class AKS74U_Bttstck: Inventory_Base
 {
 	displayName="$STR_iz_cfgVehicles_AKS74U_Bttstck0";
 	descriptionShort="$STR_iz_cfgVehicles_AKS74U_Bttstck1";
+	inventorySlot[]=
+	{
+		"weaponButtstockSaiga",
+		"weaponButtstockAK"
+	};
 };
 class MP5k_StockBttstck: Inventory_Base
 {
@@ -92,6 +116,11 @@ class Saiga_Bttstck: Inventory_Base
 {
 	displayName="$STR_iz_cfgVehicles_Saiga_Bttstck0";
 	descriptionShort="$STR_iz_cfgVehicles_Saiga_Bttstck1";
+	inventorySlot[]=
+	{
+		"weaponButtstockSaiga",
+		"weaponButtstockAK"
+	};
 };
 class M4_PlasticHndgrd: Inventory_Base
 {
@@ -152,4 +181,9 @@ class M249_Bipod: Inventory_Base
 {
 	displayName="$STR_iz_cfgVehicles_M249_Bipod0";
 	descriptionShort="$STR_iz_cfgVehicles_M249_Bipod1";
+};
+class FieldShovel: Inventory_Base
+{
+	displayName="$STR_iz_CfgVehicles_FieldShovel0";
+	descriptionShort="$STR_iz_CfgVehicles_FieldShovel1";
 };

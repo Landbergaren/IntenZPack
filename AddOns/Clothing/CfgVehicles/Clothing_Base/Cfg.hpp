@@ -20,6 +20,7 @@ class Clothing: Clothing_Base {};
 #include "BDUJacket\Cfg.hpp"
 #include "BDUPants\Cfg.hpp"
 #include "PressVest_ColorBase\Cfg.hpp"
+#include "HighCapacityVest_ColorBase\Cfg.hpp"
 
 class BeanieHat_ColorBase: Clothing
 {	
