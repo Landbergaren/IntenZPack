@@ -19,9 +19,11 @@ modded class MissionServer
 			GetGame().GetMenuDefaultCharacterData().GenerateRandomEquip();
 		}
 		// IntenZ suicide check
+        JMDate currentJMDate = JMDate.Now();
+        int currentTimeStamp = currentJMDate.GetTimestamp();
 		if (m_player.previousSpawn) 
 		{
-			if (!m_player.hasBeenKilledByPlayer && !PlayerLivedLongEnough()) 
+			if (!m_player.hasBeenKilledByPlayer && !PlayerLivedLongEnough(currentTimeStamp)) 
 			{
 				Print("[Prevent Suicide] player has suicided");
 				Print("[Prevent Suicide] m_player.hasBeenKilledByPlayer inside of OnClinetNewEvent" + m_player.hasBeenKilledByPlayer);
@@ -38,18 +40,17 @@ modded class MissionServer
 		return m_player;
 	}
 	
-	private bool PlayerLivedLongEnough()  
+	private bool PlayerLivedLongEnough(JMDate currentTimeStamp)  
 	{
 		if (!m_player.previousSpawnTimestamp) 
 		{
 			return true;
 		}
 		const int minimumTime = 10;
-		int currentDateTime = JMDate.GetTimestamp(); 
-		Print("[Prevent Suicide] currentDateTime inside PlayerLivedLongEnough(): " + currentDateTime);
+		Print("[Prevent Suicide] currentDateTime inside PlayerLivedLongEnough(): " + currentTimeStamp);
 		Print("[Prevent Suicide] m_player.previousSpawnTimestamp inside PlayerLivedLongEnough(): " + m_player.previousSpawnTimestamp);
 		int minutesBetweenDeaths = 0;
-		JMDate.TimestampCalculMinutes( m_player.previousSpawnTimestamp, currentDateTime, minutesBetweenDeaths );
+		JMDate.TimestampCalculMinutes( m_player.previousSpawnTimestamp, currentTimeStamp, minutesBetweenDeaths );
 		Print("[Prevent Suicide] minutesBetweenDeaths inside PlayerLivedLongEnough() " + minutesBetweenDeaths);
 		return minutesBetweenDeaths > minimumTime;
 	}
