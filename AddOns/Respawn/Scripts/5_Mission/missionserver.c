@@ -19,38 +19,37 @@ modded class MissionServer
 			GetGame().GetMenuDefaultCharacterData().GenerateRandomEquip();
 		}
 		// IntenZ suicide check
-        JMDate currentJMDate = JMDate.Now();
+        JMDate currentJMDate = JMDate.Now( true );
         int currentTimeStamp = currentJMDate.GetTimestamp();
-		if (m_player.previousSpawn) 
+		if ( m_player.previousSpawn ) 
 		{
-			if (!m_player.hasBeenKilledByPlayer && !PlayerLivedLongEnough(currentTimeStamp)) 
+			if ( !m_player.hasBeenKilledByPlayer && !PlayerLivedLongEnough(currentTimeStamp) ) 
 			{
 				Print("[Prevent Suicide] player has suicided");
 				Print("[Prevent Suicide] m_player.hasBeenKilledByPlayer inside of OnClinetNewEvent" + m_player.hasBeenKilledByPlayer);
-				Print("[Prevent Suicide] spawwn position changed from " + pos + " to " + m_player.previousSpawn);
+				Print("[Prevent Suicide] spawn position changed from " + pos + " to " + m_player.previousSpawn);
 				pos = m_player.previousSpawn;
 			}
 		}
-		m_player.previousSpawnTimestamp = JMDate.GetTimestamp();
-		if (CreateCharacter(identity, pos, ctx, characterType))
+		m_player.previousSpawnTimestamp = currentTimeStamp;
+		if ( CreateCharacter(identity, pos, ctx, characterType) )
 		{
-			EquipCharacter(GetGame().GetMenuDefaultCharacterData());
+			EquipCharacter( GetGame().GetMenuDefaultCharacterData() );
 		}
 		
 		return m_player;
 	}
 	
-	private bool PlayerLivedLongEnough(JMDate currentTimeStamp)  
+	private bool PlayerLivedLongEnough( int currentTimeStamp )  
 	{
-		if (!m_player.previousSpawnTimestamp) 
+		if ( !m_player.previousSpawnTimestamp ) 
 		{
 			return true;
 		}
 		const int minimumTime = 10;
 		Print("[Prevent Suicide] currentDateTime inside PlayerLivedLongEnough(): " + currentTimeStamp);
 		Print("[Prevent Suicide] m_player.previousSpawnTimestamp inside PlayerLivedLongEnough(): " + m_player.previousSpawnTimestamp);
-		int minutesBetweenDeaths = 0;
-		JMDate.TimestampCalculMinutes( m_player.previousSpawnTimestamp, currentTimeStamp, minutesBetweenDeaths );
+		int minutesBetweenDeaths = currentTimeStamp - m_player.previousSpawnTimestamp;
 		Print("[Prevent Suicide] minutesBetweenDeaths inside PlayerLivedLongEnough() " + minutesBetweenDeaths);
 		return minutesBetweenDeaths > minimumTime;
 	}
