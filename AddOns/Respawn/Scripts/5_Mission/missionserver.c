@@ -46,7 +46,7 @@ modded class MissionServer
 		{
 			return true;
 		}
-		const int minimumTime = 10;
+		const int minimumTime = 600;
 		Print("[Prevent Suicide] currentDateTime inside PlayerLivedLongEnough(): " + currentTimeStamp);
 		Print("[Prevent Suicide] m_player.previousSpawnTimestamp inside PlayerLivedLongEnough(): " + m_player.previousSpawnTimestamp);
 		int minutesBetweenDeaths = currentTimeStamp - m_player.previousSpawnTimestamp;
