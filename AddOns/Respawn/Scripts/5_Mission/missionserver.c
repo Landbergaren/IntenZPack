@@ -31,7 +31,8 @@ modded class MissionServer
 				pos = m_player.previousSpawn;
 			}
 		}
-		m_player.previousSpawnTimestamp = currentTimeStamp;
+		SetValuesForFutureSpawn(pos, currentTimeStamp);
+		
 		if ( CreateCharacter(identity, pos, ctx, characterType) )
 		{
 			EquipCharacter( GetGame().GetMenuDefaultCharacterData() );
@@ -47,10 +48,16 @@ modded class MissionServer
 			return true;
 		}
 		const int minimumTime = 600;
-		Print("[Prevent Suicide] currentDateTime inside PlayerLivedLongEnough(): " + currentTimeStamp);
+		Print("[Prevent Suicide] currentTimeStamp inside PlayerLivedLongEnough(): " + currentTimeStamp);
 		Print("[Prevent Suicide] m_player.previousSpawnTimestamp inside PlayerLivedLongEnough(): " + m_player.previousSpawnTimestamp);
 		int minutesBetweenDeaths = currentTimeStamp - m_player.previousSpawnTimestamp;
 		Print("[Prevent Suicide] minutesBetweenDeaths inside PlayerLivedLongEnough() " + minutesBetweenDeaths);
 		return minutesBetweenDeaths > minimumTime;
+	}
+
+	private void SetValuesForFutureSpawn(vector newPosition, int currentTimestamp) 
+	{
+		m_player.previousSpawn = newPosition;
+		m_player.previousSpawnTimestamp = currentTimeStamp;
 	}
 };
