@@ -1,17 +1,22 @@
 modded class PlayerBase 
-{
-	vector previousSpawn;
-	int previousSpawnTimestamp;
-	bool hasBeenKilledByPlayer; 
-	
+{	
 	override void EEKilled( Object killer ) 
 	{
 		super.EEKilled(killer);
-		Man player = Man.Cast(killer);		
-		if (player) 
+		Man killerMan = Man.Cast(killer);
+		playerSteamId = this.GetIdentity().GetPlainId();
+		PlayerRespawnModel playerRespawn = RespawnFileHandler.Load(playerSteamId);
+		if (killerMan) 
 		{
-			hasBeenKilledByPlayer = true;
-			Print("[Prevent Suicide] Player was killed by another player");
+			playerRespawn.hasBeenKilledByAnotherPlayer = playerSteamId != killerMan.GetIdentity().GetPlainId();
+			
+			Print("[Prevent Suicide] hasBeenKilledByPlayer " + hasBeenKilledByAnotherPlayer);
 		}
+		else 
+		{
+			playerRespawn.hasBeenKilledByAnotherPlayer = false;
+			Print("[Prevent Suicide] Player did not get killed by a player");
+		}
+		RespawnFileHandler.Save(playerRespawn, playerSteamId)
 	}
 };
