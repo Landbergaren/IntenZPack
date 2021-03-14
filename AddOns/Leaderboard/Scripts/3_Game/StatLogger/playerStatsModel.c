@@ -1,16 +1,17 @@
 class PlayerStatsModel 
 {
-	void PlayerStatsModel() 
+    void PlayerStatsModel() 
 	{
-		deaths = new array<DeathStatsModel>;
-		kills = new array<KillStatsModel>;
+        deaths = new array<DeathStatsModel>;
+        kills = new array<KillStatsModel>;
 		animalsKilled = new array<string>;
-	}
-	
+    }
+
 	ref array<DeathStatsModel> deaths;
 	ref array<KillStatsModel> kills;
 	ref array<string> animalsKilled;
 	string name;
+	string lastTimeSeen;
 	int deathsToZCount;
 	int deathsToNaturalCauseCount;
 	int deathsToPlayerCount;
@@ -20,10 +21,10 @@ class PlayerStatsModel
 	int zKilled;
 	int timeSurvived;
 	int distTrav;
-};
+}
 
 class DeathStatsModel 
-{	
+{
 	void DeathStatsModel() 
 	{
 		animalsKilled = new array<string>;
@@ -37,9 +38,9 @@ class DeathStatsModel
 	int distTrav;
 	string timeStamp;
 	string posDeath;
-	string killer;
+    string killer;
 	string weapon;
-};
+}
 
 class KillStatsModel 
 {
@@ -47,15 +48,15 @@ class KillStatsModel
 	{
 		victim = new Victim;
 	}
-	ref Victim victim;
+    ref Victim victim;
 	string timeStamp;
 	string posKill;
 	string weapon;
 	float distance;
-};
+}
 
 class Victim 
 {
 	string id;
 	int timeSurvived;
-};
+}
